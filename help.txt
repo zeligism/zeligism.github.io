@@ -1,0 +1,2 @@
+bundle exec jekyll serve --drafts
+date '+%Y-%m-%d %H:%M:%S %z'
