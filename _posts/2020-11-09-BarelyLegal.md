@@ -4,7 +4,7 @@ title:  "Barely Legal"
 date:   2020-11-09 02:15:15 +0400
 ---
 
-For all $$\epsilon > 0$$, is the following situation morally justified?
+For all $$\epsilon > 0$$, suppose that the following happens:
 
 $$18+\epsilon$$ year-old guy: "hi ur very attrektif can u be my gf?"
 
