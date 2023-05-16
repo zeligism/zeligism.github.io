@@ -9,18 +9,22 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Zeligism
-description: >- # this means to ignore newlines until "baseurl:"
-  Personal blog. I write down some of the conversations I have with myself inside my head.
+title: zeligism
+author: Abdulla Jasem Almansoori
+email: first.last@mbzuai.ac.ae
+description: >-
+  Academic Website. Includes some of my personal writing.
+
+# Posts
+show_excerpts: true
 
 # URL
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zeligism.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Social
-github_username: zeligism
-twitter_username: zeligcino
-# instagram_username: zeligcino
+# github_username: zeligism
+# twitter_username: zeligcino
 # ORCID: 0000-0002-3373-2043
 
 # Disqus Comments
