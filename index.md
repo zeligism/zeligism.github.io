@@ -15,38 +15,51 @@ Previously, I got my master degree in computer science at the University of Sout
 
 ## Research
 My interests lie at the intersection of machine learning and optimization. I am generally interested in:
-* collaborative learning (e.g. personalization in federated learning).
-* deep learning theory and optimization (e.g. overparameterization, adaptive algorithms).
-* generative models (e.g. GAN, VAE, diffusion, LLM, etc).
+* collaborative learning (e.g., personalization in federated learning).
+* deep learning theory and optimization (e.g., overparameterization, adaptive algorithms).
+* generative models (GANs, in particular).
 
-My long-term vision is to design a network of intelligent systems that can learn more efficiently together and tackle bigger, more complicated real-world problems collaboratively.
+My long-term vision is to have a network of intelligent systems that can learn more efficiently and adaptively together and tackle bigger, more complicated real-world problems collaboratively.
 
 
 ### News
-* 2023 Dec: Presented a poster in the 2nd collaborative learning workshop on a work-in-progress about federated personalization with mixtures of LoRAs. Then went to NeurIPS to present our poster.
-* 2023 Sep: "*Byzantine-Tolerant Methods for Distributed Variational Inequalities*" got accepted to NeurIPS 2023.
-* 2023 May: "*Partial Disentanglement with Partially-Federated GANs (PaDPaF)*" got accepted to MLSys 2023 Workshop on Federated Learning Systems.
+* **2024 July**: Really proud to have received the [Best Reviewer Award at ICML 2024](https://x.com/icmlconf/status/1815647580577059312).
+* **2024 May**: "*PaDPaF: Partial Disentanglement with Partially-Federated GANs*" got accepted to [TMLR 05/2024](https://openreview.net/forum?id=vsez76EAV8).
+* **2023 Dec**: Presented a poster in the 2nd collaborative learning workshop on a work-in-progress about federated personalization with mixtures of LoRAs. Also, went to NeurIPS to present our poster.
+* **2023 Sep**: "*Byzantine-Tolerant Methods for Distributed Variational Inequalities*" got accepted to [NeurIPS 2023](https://nips.cc/virtual/2023/poster/72322).
+* **2023 May**: "*PaDPaF: Partial Disentanglement with Partially-Federated GANs*" got accepted to [MLSys 2023 Workshop on Federated Learning Systems](https://flsys.github.io).
 
 
 ### Publications
 *See my [Google Scholar](https://scholar.google.com/citations?user=J7Qf4ZsAAAAJ) for an up to date list.*
 
-* Nazarii Tupitsa, **Abdulla Jasem Almansoori**, Yanlin Wu, Martin Takáč, Karthik Nandakumar, Samuel Horváth, Eduard Gorbunov.
+#### Preprint
+1. **Abdulla Jasem Almansoori**, Samuel Horváth, and Martin Takáč.
+*Collaborative and Efficient Personalization with Mixtures of Adaptors.*
+(Under review).
+[\[code\]](https://github.com/zeligism/FLoRAL)
+<!-- [\[paper\]](https://openreview.net/forum?id=vsez76EAV8) -->
+
+#### Conference
+1. Nazarii Tupitsa, **Abdulla Jasem Almansoori**, Yanlin Wu, Martin Takáč, Karthik Nandakumar, Samuel Horváth, Eduard Gorbunov.
 *Byzantine-Tolerant Methods for Distributed Variational Inequalities.* NeurIPS 2023.
 [\[paper\]](https://arxiv.org/abs/2311.04611)
 [\[code\]](https://github.com/zeligism/vi-robust-agg)
-* **Abdulla Jasem Almansoori**, Samuel Horváth, and Martin Takáč.
-*Partial Disentanglement with Partially-Federated GANs (PaDPaF).* MLSys 2023 Workshop on Federated Learning Systems
-[\[paper\]](https://arxiv.org/abs/2212.03836)
+
+#### Journal
+1. **Abdulla Jasem Almansoori**, Samuel Horváth, and Martin Takáč.
+*PaDPaF: Partial Disentanglement with Partially-Federated GANs.*
+Transactions on Machine Learning Research (TMLR) 05/2024.
+[\[paper\]](https://openreview.net/forum?id=vsez76EAV8)
 [\[code\]](https://github.com/zeligism/PaDPaF)
-* Abdurakhmon Sadiev, Aleksandr Beznosikov, **Abdulla Jasem Almansoori**, Dmitry Kamzolov, Rachael Tappenden, and Martin Takáč.
-*Stochastic Gradient Methods with Preconditioned Updates.* arxiv 2022 (under review).
-[\[paper\]](https://arxiv.org/abs/2206.00285)
+2. Abdurakhmon Sadiev, Aleksandr Beznosikov, **Abdulla Jasem Almansoori**, Dmitry Kamzolov, Rachael Tappenden, and Martin Takáč.
+*Stochastic Gradient Methods with Preconditioned Updates.* Journal of Optimization Theory and Applications 03/2024.
+[\[paper\]](https://link.springer.com/article/10.1007/s10957-023-02365-3)
 [\[code\]](https://github.com/zeligism/PrecondUpdate)
 
 
 ## Professional Experience
-* I started **national service** 6 months before PhD (Feb 2021) and finished right after my first year (June 2022).
+* I started **national service** 6 months before PhD (Feb 2021) and finished after my first year (June 2022).
 I finished **military boot camp** in *Manama Camp, Fujairah*, and then got recruited by *Dubai Police* as a part of the *Expo 2020 batch*. I received airport security training in *Dubai International Airport (DXB)*, worked at *Expo 2020* as a **vehicle inspector** (from dusty trucks to shiny rolls royces), and then worked as a security guard again in *Al Maktoum International Airport (DWC)*.
 It had been a great, diverse, mind-opening, humbling experience overall with a slightly hectic shift schedule and long commutes balanced with PhD studies on the side.
 
@@ -56,13 +69,13 @@ The team was absolutely great and the work environment was chill (we used to wor
 
 
 ## Hobbies
-I do enjoy my research, but I also have a lot of other interests. Lately, I have been cooking stuff (mostly Italian cuisine). I also love travelling (for food more than sightseeing).
-Other hobbies include: playing video games (I used to be a kaizo-level platformer player), watching anime, manga, learning languages (Italian and Japanese), photography, opening parentheses (like this one), and eating.
+I do enjoy my research, but I also have a lot of other interests. I love cooking (Italian cuisine, in particular). I also love travelling (sometimes for food, e.g., Italy).
+Other hobbies include: playing video games (e.g., used to play kaizo-level Mario and ashamedly proud of it), watching anime/reading manga, learning languages (e.g., Japanese and Italian), photography (I have a Fuji X-T10), opening parentheses (like this one), and eating, of course.
 
-One of the things that helped me start cooking is living abroad alone, and what kept me going is my family.
-I used to cook rice and chicken (kabsa) abroad because I wanted to survive and eat homey comfort food.
-Nowadays, I would spend a day or two making lasagne from scratch or sourdough bread or whatever, and my whole family would devour the thing within minutes.
-There is a beautiful sense of fulfillment that you get when people you care about complement you for the nice food (or coffee) that you make. This gives me the motivation to cook even more delicious stuff. (I wish my publications have this kind of impact.)
+<!-- One of the things that helped me start cooking is living abroad alone, and what kept me going is my family. -->
+I used to cook rice and chicken (machboos/kabsa) abroad because I wanted to survive and eat homey comfort food.
+Sometimes, I would be spending a day or two making lasagne or sourdough bread or whatever, and my whole family would devour the thing within minutes.
+There is a beautiful sense of fulfillment that you get when people you care about become happy and complement you for the nice food you make. This gives me the motivation to cook more delicious food that draws a bigger smile on everyone. (I wish my publications have this kind of impact.)
 
 
 ## Contact Me
