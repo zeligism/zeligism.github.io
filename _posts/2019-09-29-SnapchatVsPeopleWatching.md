@@ -16,17 +16,16 @@ TOM:
 (*sighs*).
 
 JOHN:
-(*swiping*)...
-(*watches a snap*).
+(*swiping*)... (*looks at a hot girl and sends a heart emoji*)
 
 TOM:
-I don’t understand what’s the joy in watching other people’s lives, having fun and doing stupid stuff. People these days are so weird.
+I don’t understand what’s the joy in watching other people’s lives, having fun and whatever.
 
 JOHN:
-I don’t know, it’s kinda fun. Did you see this guy, though? He’s funny. He does stupid stuff.
+It’s just for passing time and it's kinda fun! Did you see this guy, though? He’s really funny!
 
 TOM:
-No, thanks. I think these things are made for stupid people.
+No, thanks, but I think you're wasting precious time that could be used in doing other productive stuff.
 
 
 ## 1820
@@ -37,10 +36,10 @@ THOMAS: (*sighs*).
 
 JONATHON:
 (*screening*)...
-(*eyes a mesmerizing lady, coughs gently*). Ahem, **M’lady**. (*tips hat*).
+(*eyes a mesmerizing lady, coughs gently, and tips hat*). Ahem, **M’lady**.
 
 THOMAS: 'T bewild'rs me yond a sir finds pleasure in the trifling act of obs'rving the commonplace existence of the populace, amusing themselves and whatnot.
 
-JONATHON: 'tis the passing of timeth and m'rry moments, mine own cousin.  Beholdeth this ingraft'r, f'r that gent hast wits!
+JONATHON: 'tis the passing of timeth and m'rry moments, mine own cousin! Beholdeth this ingraft'r, f'r that gent hast wits!
 
-THOMAS: Much obliges, alas methinks thy joyous endeav'rs is but f'r the foolish, unscrupulous men.
+THOMAS: Much obliges, alas methinks thy joyous endeav'rs is but f'r the unscrupulous men.
