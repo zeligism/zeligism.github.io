@@ -1,10 +1,8 @@
 ---
 layout: post
-title:  "You Don’t Understand I-Don’t-Understand"
+title:  "You Don’t Understand \"I Don’t Understand\""
 date:   2019-12-18 00:00:00 +0400
 ---
-
-*A pedagogical analysis of not-understanding.*
 
 Teachers often ask students things like this: “Did you understand?”, “Do you have any questions?”, or “Who can answer this question?”, and so on. The problem with this kind of questions is that the teacher is giving the student control over the direction of the lecture, and, quite often, the students are very bad at making the lecture interesting or useful (unless the audience is a small number of extremely interested and cooperative researchers).
 
