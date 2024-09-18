@@ -47,7 +47,7 @@ $\begin{equation}
     f(x) - f(x^*) \leq \frac{1}{2\alpha} \|\nabla f(x) \|^2 + \frac{\alpha - \mu}{2}\|x-x^*\|^2.
     \tag{PL+Error}
 \end{equation}$
-This is like a *PL inequality but with an error term*. Setting $\alpha \leq \mu$ implies PL, exactly so when the equality holds, but it also *kinda* holds with an error of $\frac{\alpha - \mu}{2}\|x-x^*\|^2$ otherwise.
+This is like a *PL inequality but with an error term*. Having $\mu \geq \alpha$ implies PL, and exactly so when it holds with equality, but it also *kinda* holds with an error of $\frac{\alpha - \mu}{2}\|x-x^*\|^2$ otherwise.
 
 We will come back to these two inequalities.
 
