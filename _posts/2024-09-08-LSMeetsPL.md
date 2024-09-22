@@ -12,26 +12,22 @@ $\newcommand{\E}{\mathbb{E}}$
 <!--  -->
 A distribution $\nu$ satisfies **Log-Sobolev (LS) inequality** with $\alpha > 0$ if, for all distributions $\rho$, the following holds
 
-{::nomarkdown}
 $$
 \begin{equation}
     H_\nu(\rho) \leq \frac{1}{2\alpha}J_\nu(\rho),
     \tag{LS}
 \end{equation}
 $$
-{:/}
 
 where $H_\nu(\rho)$ is the KL-divergence and $J_\nu(\rho)$ is the relative Fisher information, i.e.,
 
-{::nomarkdown}
 $$
-\begin{equation}
+\begin{equation*}
     \E_{x \sim \rho} \left[\log\frac{\rho(x)}{\nu(x)}\right]
     \leq
     \frac{1}{2\alpha}\E_{x \sim \rho}\left[\left\|\nabla\log\frac{\rho(x)}{\nu(x)}\right\|^2\right].
-\end{equation}
+\end{equation*}
 $$
-{:/}
 
 There are other ways to write it as well, but I found this definiton in
 [(Kinoshita and Suzuki, 2022, Assumption 2)](https://proceedings.neurips.cc/paper_files/paper/2022/hash/78e839f96568985d18463044a064ea0f-Abstract-Conference.html), which seems to be the standard way to write it as we will see later.
@@ -40,14 +36,12 @@ It's called Log-Sobolev because it involves logarithms and derivatives ([Sobolev
 ## PL
 When I first saw the LS inequality, I thought that it looked suspiciously similar to the **Polyak-Łojasiewicz (PL) inequality**. A function $f$ with a (not necessarily unique) optimum $x^\ast$ satisfies the PL inequality with $\mu > 0$ if
 
-{::nomarkdown}
 $$
 \begin{equation}
      f(x) - f(x^\ast) \leq \frac{1}{2\mu} \|\nabla f(x) \|^2.
      \tag{PL}
 \end{equation}
 $$
-{:/}
 
 **Note**: a $\mu$-strongly convex $f$ is $\mu$-PL, but a $\mu$-PL function may not necessarily be even convex.
 The fact that this holds is not very obvious until you see it, e.g., see [(Garrigos and Gower, 2023, Lemma 2.18)](https://arxiv.org/abs/2301.11235) for the proof, and further ahead for counter-examples of the opposite direction.
@@ -58,25 +52,21 @@ Put yourself at any optimal point, where the landscape is flattest. As we go fur
 Note that when $f$ is $\mu$-strongly convex (which implies PL), we have $\frac{\mu}{2}\|x-x^\ast\|^2 \leq f(x) - f(x^\ast)$.
 With an application of Cauchy-Schwarz, we can also get
 
-{::nomarkdown}
 $$
 \begin{equation}
     f(x) - f(x^\ast) \leq \|x-x^\ast\|\|\nabla f(x) \| - \frac{\mu}{2}\|x-x^\ast\|^2,
     \tag{FDG}
 \end{equation}
 $$
-{:/}
 
 which can be made with Young's inequality into
 
-{::nomarkdown}
 $$
 \begin{equation}
     f(x) - f(x^\ast) \leq \frac{1}{2\alpha} \|\nabla f(x) \|^2 + \frac{\alpha - \mu}{2}\|x-x^\ast\|^2.
     \tag{PL+Error}
 \end{equation}
 $$
-{:/}
 
 This is like a *PL inequality but with an error term*. Having $\mu \geq \alpha$ implies PL, and exactly so when it holds with equality, but it also *kinda* holds with an error of $\frac{\alpha - \mu}{2}\|x-x^\ast\|^2$ otherwise.
 
@@ -90,28 +80,24 @@ It's becoming clear now that LS = PL. It is, indeed, true and already mentioned 
 
 Talagrand inequality states that, for a Gaussian measure $\nu$, we have
 
-{::nomarkdown}
 $$
 \begin{equation}
     \frac{\alpha}{2} W_2(\rho,\nu)^2 \leq H_\nu(\rho),
     \tag{Talagrand}
 \end{equation}
 $$
-{:/}
 
 where $W_2(\rho,\nu)$ is the Wasserstein distance (and I think the corresponding $f$ should have a bounded Hessian). This result was extended to arbitrary measures $\nu$ satisfying LS by [Otto and Villani (2000)](https://cedricvillani.org/sites/dev/files/old_images//2012/08/014.OV-Talagrand.pdf),
 so we now have the stronger upper bound of $J_{\nu}(\rho)$ (times $\frac{2}{\alpha}$). Moreover, Talagrand and LS inequalities are equivalent when $\nu$ is log-concave.
 
 Another interesting result in their paper is the HWI inequality in Theorem 3
 
-{::nomarkdown}
 $$
 \begin{equation}
     H_\nu(\rho) \leq W_2(\rho,\nu) \sqrt{J_\nu(\rho)} - \frac{K}{2} W_2(\rho,\nu)^2,
     \tag{HWI}
 \end{equation}
 $$
-{:/}
 
 where $K$ is the (strong-)convexity parameter, but it can be negative as well, accounting for weak-non-convexity. If you look closely, this is just the $\text{(FDG)}$ equation above. It is called HWI because of the quantities involved (the J is an I in the original paper). We called the corresponding inequality FDG for roughly the same reason (Function Distance Gradient). The $\text{(PL+Error)}$ has a corresponding version that is similarly attained from HWI with Young's inequality.
 
@@ -124,7 +110,6 @@ Basically, PL inequality is evaluated with respect to points $x$, whereas LS ine
 In maximum likelihood estimation, we minimize $f(\cdot) =-\log \rho(\cdot)$, but it's different here as we want $\rho$ to converge to $\nu$. Thus, we minimize the distance between them, which is often chosen to be the KL-divergence *at the point $x$*.
 In other words, $f(\cdot) = \log \rho(\cdot) - \log \nu(\cdot) = \log \frac{\rho(\cdot)}{\nu(\cdot)}$, and that's pretty much it. Taking expectation with respect to $x$ of the PL inequality, and assuming that $f(x^\ast)=0$ without loss of generality (because we can use $f(\cdot) - f(x^\ast)$), we have the equivalence
 
-{::nomarkdown}
 $$
 \begin{equation}
     \E_{x \sim \rho} [f(x) - f(x^\ast)]
@@ -134,14 +119,12 @@ $$
     .
 \end{equation}
 $$
-{:/}
 
 Pretty anti-climactic, isn't?
 
 Ok, so would the PL inequality be equal to LS on the functional $f = H_\nu$, and vice versa? In this case, it is not very clear.
 In the appendix, I show a derivation of the gradient using the definition $\frac{H_\nu(\rho + \delta\rho)-H_\nu(x)}{\|\delta\rho\|} \overset{\|\delta\rho\| \to 0}{\longrightarrow} \nabla_{\rho} H_\nu(\rho)$ and the constraint $\int d\rho = 1$, which gives $\nabla_{\rho} H_\nu (\rho) = \log \frac{\rho}{\nu}$. Overall, we have
 
-{::nomarkdown}
 $$
 \begin{equation}
     H_\nu(\rho)
@@ -153,9 +136,21 @@ $$
     .
 \end{equation}
 $$
-{:/}
 
 It is not very clear whether the last equality holds or not, and I don't have the necessary background to figure this out at the moment.
+
+## Final Thoughts (by ChatGPT)
+The equivalence between the Log-Sobolev and Polyak-Łojasiewicz inequalities reveals deep connections between optimization and sampling, two seemingly different areas of mathematical research. These results are not just theoretical curiosities; they offer practical insights into designing algorithms for optimization and sampling with convergence guarantees.
+
+Moving forward, this connection could inspire new methods for tackling high-dimensional optimization problems using tools from probability theory, and vice versa. In particular, we might explore how LS-based methods could inform the design of more robust optimization algorithms in the context of non-convex functions, where traditional convexity-based methods struggle.
+
+This equivalence highlights the power of interdisciplinary approaches in mathematics, where ideas from one domain can often shed light on problems in another.
+
+![ChatGPT explaining](/assets/ChatGPT_LS_PL.png)
+*Figure 1: ChatGPT was very confident that this diagram will help clarify things up.
+Apparently, ChatGPT had to sketch this diagram quickly on the dashboard of her Lexus LS 430
+because she was running late for a meeting after a long manicure session.*
+
 
 <br>
 
@@ -179,7 +174,7 @@ It is not very clear whether the last equality holds or not, and I don't have th
 
 ## Appendix
 Treating $\rho$ as a vector (i.e., $\rho_i = d\rho$), the KL-divergence after perturbing $\rho$ becomes
-{::nomarkdown}
+
 $$
 \begin{align}
     H_\nu(\rho+\delta\rho) &= \sum_i (\log(\rho_i+\delta\rho_i) - \log\nu_i) (\rho_i+\delta\rho_i)
@@ -204,12 +199,10 @@ $$
     .
 \end{align}
 $$
-{:/}
 
 The measure perturbation clearly does not have to be positive nor a measure (e.g.,  $\rho = (0.5, 0.5)$ and $\delta\rho=(-0.1, 0.1)$). However, it should satisfy $\sum_i \delta \rho_i = 0$, which follows from $\sum_i \rho_i=1$.
 Thus, we have that $\langle \mathbf{1},  \delta\rho \rangle = 0$, so
 
-{::nomarkdown}
 $$
 \begin{equation}
     \lim_{\|\delta\rho\| \to 0} \frac{H_\nu(\rho+\delta\rho) - H_\nu(\rho)}{\|\delta \rho\|}
@@ -218,7 +211,6 @@ $$
      \nonumber
 \end{equation}
 $$
-{:/}
 
 In the continuous case, we have $\nabla_\rho H_\nu(\rho) = \log \rho - \log \nu$ in the sense that $\langle g(\rho,\nu),  \frac{\delta\rho}{\|\delta \rho\|} \rangle = \int g(\rho(x),\nu(x))\frac{\delta\rho(x)}{\|\delta \rho\|} dx$, so, indeed, we have $\langle \nabla_\rho H_\nu(\rho),d\rho \rangle = \int (\log\rho(x) - \log\nu(x)) \rho(x) dx = H_\nu(\rho)$.
 
