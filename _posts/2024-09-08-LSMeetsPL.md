@@ -7,9 +7,8 @@ academic: true
 The connection between sampling and optimization have been established quite a few times in the literature, with some results going back 40 years ago. Here, I will talk about a connection between two seemingly unrelated inequalities (at least to people working in optimization). It's very obvious in hindsight, but I found it quite interesting and worth sharing.
 
 ## LS
-<!-- Helper math commands -->
+<!-- Helper math commands (hide them after the first section) -->
 $\newcommand{\E}{\mathbb{E}}$
-<!--  -->
 A distribution $\nu$ satisfies **Log-Sobolev (LS) inequality** with $\alpha > 0$ if, for all distributions $\rho$, the following holds
 
 $$
@@ -146,7 +145,7 @@ Moving forward, this connection could inspire new methods for tackling high-dime
 
 This equivalence highlights the power of interdisciplinary approaches in mathematics, where ideas from one domain can often shed light on problems in another.
 
-![ChatGPT explaining](/assets/ChatGPT_LS_PL.png)
+![ChatGPT explaining](/assets/img/ChatGPT_LS_PL.png)
 *Figure 1: ChatGPT was very confident that this diagram will help clarify things up.
 Apparently, ChatGPT had to sketch this diagram quickly on the dashboard of her Lexus LS 430
 because she was running late for a meeting after a long manicure session.*

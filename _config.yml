@@ -39,9 +39,15 @@ google_analytics: UA-141191998-1
 markdown: kramdown
 kramdown:
   math_engine: mathjax
-theme: minima
+
+# theme: minima
+remote_theme: jekyll/minima
+minima:
+  skin: auto
+
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

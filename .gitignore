@@ -1,5 +1,5 @@
 .DS_Store
 Gemfile.lock
+.jekyll-metadata
 _site/
 _drafts_local/
-Gemfile.lock

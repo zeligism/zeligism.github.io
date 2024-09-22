@@ -12,7 +12,7 @@ layout: home
 My name is Abdulla Jasem Almansoori (عبدالله جاسم المنصوري). I started my PhD in machine learning at [Mohamed bin Zayed University of Artificial Intelligence](https://mbzuai.ac.ae) in 2021,
 where I am fortunate to be advised by [Martin Takáč](https://mtakac.com) and [Samuel Horváth](https://sites.google.com/view/samuelhorvath).
 Previously, I got my master degree in computer science at the University of Southern California in 2018, and before that I got my bachelor in industrial engineering at Purdue University in 2016.
-You can find my cv [here](assets/cv.pdf).
+You can find my cv [here](assets/doc/cv.pdf).
 
 ## Research
 My interests lie at the intersection of machine learning and optimization. I am generally interested in:
