@@ -38,7 +38,7 @@ google_analytics: UA-141191998-1
 # Build settings
 markdown: kramdown
 kramdown:
-    math_engine: mathjax
+  math_engine: none
 theme: minima
 plugins:
   - jekyll-feed
