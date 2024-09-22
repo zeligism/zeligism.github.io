@@ -212,7 +212,25 @@ $$
 \end{equation}
 $$
 
-In the continuous case, we have $\nabla_\rho H_\nu(\rho) = \log \rho - \log \nu$ in the sense that $\langle g(\rho,\nu),  \frac{\delta\rho}{\|\delta \rho\|} \rangle = \int g(\rho(x),\nu(x))\frac{\delta\rho(x)}{\|\delta \rho\|} dx$, so, indeed, we have $\langle \nabla_\rho H_\nu(\rho),d\rho \rangle = \int (\log\rho(x) - \log\nu(x)) \rho(x) dx = H_\nu(\rho)$.
+In the continuous case, we have $\nabla_\rho H_\nu(\rho) = \log \rho - \log \nu$ in the sense that
+
+$$
+\begin{equation}
+    \langle g(\rho,\nu),  \frac{\delta\rho}{\|\delta \rho\|} \rangle = \int g(\rho(x),\nu(x))\frac{\delta\rho(x)}{\|\delta \rho\|} dx
+    ,
+     \nonumber
+\end{equation}
+$$
+
+so, indeed, we have
+
+$$
+\begin{equation}
+    \langle \nabla_\rho H_\nu(\rho),d\rho \rangle = \int (\log\rho(x) - \log\nu(x)) \rho(x) dx = H_\nu(\rho)
+    .
+    \nonumber
+\end{equation}
+$$
 
 The norm can be $\int \lvert\delta\rho(x)\rvert^2dx$, but note that $\|\rho\|_1$ does not necessarily have to be equal to 1 or 0. In fact, it can be larger than 1. In the example above, $\|\rho\|_1 = 0.2$. If we consider the same example but taken to the extreme, we can see that we can take it up until $\|\rho\|_1 = 2$, which is the largest possible L1 (i.e., total variation) norm.
 
