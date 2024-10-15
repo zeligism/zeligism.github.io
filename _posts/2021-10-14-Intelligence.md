@@ -20,4 +20,4 @@ For example, the tasks of discovering theories with everyday-life implications m
 You can see how intelligence is difficult to compare.
 It is extremely dependent on the distribution of tasks.
 
-Suppose that some savant have the ability to see and understand things that normal humans cannot possibly fathom. It might be interesting to ponder the fact that “the theory of everything” right now might be in someone’s head who will never be able communicate it. Intelligence have to be an observable property. For the intelligence of the savant who discovered the theory of everything in his garage to manifest, he has to, at the very least, gesture that he reached this discovery.
+Suppose that some savant have the ability to see and understand things that normal humans cannot possibly fathom. It might be interesting to ponder the fact that “the theory of everything” right now might be in someone’s head who will never be able communicate it. Intelligence has to be an observable property. For the intelligence of the savant who discovered the theory of everything in his garage to manifest, he has to, at the very least, gesture that he reached this discovery.
