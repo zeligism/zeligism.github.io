@@ -2,6 +2,7 @@
 layout: post
 title:  Log-Sobolev Meets Polyak-Łojasiewicz
 date:   2024-09-08 00:00:00 +0000
+author: Abdulla Jasem Almansoori
 academic: true
 ---
 The connection between sampling and optimization have been established quite a few times in the literature, with some results going back 40 years ago. Here, I will talk about a connection between two seemingly unrelated inequalities (at least to people working in optimization). It's very obvious in hindsight, but I found it quite interesting and worth sharing.
