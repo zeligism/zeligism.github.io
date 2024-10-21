@@ -8,6 +8,8 @@ date:   2011-11-11 11:11:11 +0000
 
 ---
 
+**Wife**: I've had enough of your obsession over math! You never spend time with me. I'm leaving.
+
 **Mathematician**: Honey, please, I beg you… don’t leave me alone! I love you!
 
 **Wife**: Then prove it to me!

@@ -66,9 +66,7 @@ Can't we define our own success and live by it?
 Notice that it all depends on the society itself.
 There is nothing holding any society back from championing prostitutes and putting them at the pinnacle of the success pyramid.
 
-What is a successful man? [A miserable little pile of selfish ideals](https://legendsoflocalization.com/lets-investigate-a-miserable-pile-of-secrets/).
-And what do we conclude? Nothing of substantial value about the secrets of deep, meaningful success.
-This is because there are no secrets, only subjectivity and ambiguity.
+Then, what is a successful man? [A miserable little pile of ideals.](https://legendsoflocalization.com/lets-investigate-a-miserable-pile-of-secrets/)
 Success is not a absolute quality of inherent goodness.
 What might be successful to you can be a failure to the rest of the world, and vice versa.
 Evil characters are successful at being the antagonists, right?
