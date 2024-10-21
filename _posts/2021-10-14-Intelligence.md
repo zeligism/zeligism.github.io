@@ -4,7 +4,7 @@ title:  "A Stupid Analysis of Intelligence"
 date:   2021-10-14 02:18:19 +0400
 ---
 
-Consider this machine learning-inspired definition of intelligence. Intelligence is a relative property such that one is more intelligent, *with respect to an expectation over a distribution of tasks*, if: 1) one has a better model of some task with respect to some metric (i.e., that measures performance), and 2) one converges towards a "good" model of some task more quickly with respect to some constraint on the metric, i.e. performs the task well enough with a lesser amount of work or action. Note that we need: 1) a distribution of tasks, 2) a metric to measure the performance of the model, and 3) a performance constraint for a good enough model (e.g., could be the optimal model, if it exists anyway).
+Consider this machine learning-inspired definition of intelligence. Intelligence is a relative property such that one is more intelligent, *with respect to an expectation over a distribution of tasks*, if: 1) one has a better model of some task with respect to some metric (i.e., that measures performance), and 2) one converges towards a "good" model of some task more quickly with respect to some performance constraint using the metric, i.e. performs the task well enough with a lesser amount of work or action. Note that we need: 1) a distribution of tasks, 2) a metric to measure the performance of the model, and 3) a performance constraint for a good enough model (I guess this is optional if an optimal model exists and is tractable).
 
 Now, the million dollar question: Einstein or Newton?
 You knew it was coming.
@@ -20,4 +20,15 @@ For example, the tasks of discovering theories with everyday-life implications m
 You can see how intelligence is difficult to compare.
 It is extremely dependent on the distribution of tasks.
 
-Suppose that some savant have the ability to see and understand things that normal humans cannot possibly fathom. It might be interesting to ponder the fact that “the theory of everything” right now might be in someone’s head who will never be able communicate it. Intelligence has to be an observable property. For the intelligence of the savant who discovered the theory of everything in his garage to manifest, he has to, at the very least, gesture that he reached this discovery.
+Suppose that some savant have the ability to see and understand things that normal humans cannot possibly fathom.
+It might be interesting to ponder the fact that “the theory of everything” right now might be in someone’s head who will never be able communicate it.
+Intelligence has to be an observable property.
+For the intelligence of the savant who discovered the theory of everything in his garage to manifest, he has to, at the very least, gesture that he reached this discovery.
+
+**Update 2024/10**:
+I recently saw [a CLIMB talk by Christos Papadimitriou](https://www.youtube.com/watch?v=-aSBlRhpwVc) about the intractability of computing the Nash equilibrium and, among other things, how to reinterpret games so that the computation of the Nash equilibrium becomes tractable (or something like that.. the topic is way out of my expertise).
+It might seem completely unrelated to the discussion here at a first glance.
+However, there is a vague similarity between their reinterpretation of games and the definition of intelligence, perhaps hinting at a connection between how we perceive the intelligence of an agent on a distribution of tasks and how efficiently an agent computes or reaches the equilibirum of some game.
+In short, based on what I understood, a game is mapping from a distribution over pure strategies or initial preferences (prior) to a distribution over *sink equilibria* (posterior).
+A *sink equilibrium* is a sort of a generalization of a Nash equilibrium; it is a strongly connected graph in which cycles of game plays occur and the agent can never leave, so to speak.
+I just thought this is worth mentioning, and if you're interested in game theory and intelligence, then surely you wouldn't want to skip this talk.
