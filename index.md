@@ -29,7 +29,7 @@ My long-term vision is to have a network of intelligent systems that can learn m
 * **2025 Feb**: *"Collaborative and Efficient Personalization with Mixtures of Adaptors"* got accepted to [CPAL 2025](https://cpal.cc/proceedings_track/). (I'm going to visit Stanford!)
 * **2025 Jan**: Started a collaboration with [Sheikh Shakhbout Medical City (SSMC)](https://ssmc.ae), advised by [Dr. Siddiq Anwar](https://siddiqanwar.com), to explore federated AI applications in healthcare.
 * **2024 Nov**: Presented a poster at [The ADIA Lab Symposium 2024](https://www.adialab.ae/symposium). (Nobel prize winners and Turing laureates speaking!)
-* **2024 July**: Really proud to have received the [Best Reviewer Award at ICML 2024](https://x.com/icmlconf/status/1815647580577059312)!
+* **2024 July**: Really proud to have received the [Best Reviewer Award at ICML 2024](https://x.com/icmlconf/status/1815647580577059312)! (Fun fact: I've never been to ICML.)
 * **2024 May**: "*PaDPaF: Partial Disentanglement with Partially-Federated GANs*" got accepted to [TMLR](https://openreview.net/forum?id=vsez76EAV8).
 * **2023 Dec**: Presented a poster in the [2nd collaborative learning workshop at MBZUAI](https://mbzuai-cl.github.io/2023/) on federated personalization with mixtures of LoRAs. (Great speakers list!)
 * **2023 Sep**: "*Byzantine-Tolerant Methods for Distributed Variational Inequalities*" got accepted to [NeurIPS 2023](https://nips.cc/virtual/2023/poster/72322). (I'll be going to present the poster.)
