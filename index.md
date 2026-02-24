@@ -17,8 +17,8 @@ Previously, I got my master degree in computer science at the University of Sout
 ## Research
 My interests lie at the intersection of machine learning and optimization. I am generally interested in:
 * collaborative learning (e.g., personalization in federated learning).
-* deep learning theory and optimization (e.g., overparameterization, adaptive algorithms).
-* generative models (GANs, diffusion).
+* deep learning theory and optimization (e.g., parameterization, adaptation).
+* generative models (GANs, LLMs).
 
 My long-term vision is to build collaborative AI systems that learn efficiently together and coordinate to solve complex real-world problems.
 
