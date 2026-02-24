@@ -24,7 +24,7 @@ My long-term vision is to build collaborative AI systems that learn efficiently 
 
 
 ### News
-* **2025 Aug**: Non-trivially happy that I'll be a research intern at RIKEN-AIP in the heart of Tokyo! I'll be hosted by Emtiyaz Khan in his [Adaptive Bayesian Intelligence](https://adaptive-bayesian.ai) team. Looking forward to this wonderful opportunity!
+* **2025 Aug**: Non-trivially happy that I'll be a research intern at RIKEN-AIP in the heart of Tokyo! I'll be hosted by [Emtiyaz Khan](https://emtiyaz.github.io) in his [Adaptive Bayesian Intelligence](https://adaptive-bayesian.ai) team. Looking forward to this wonderful opportunity!
 * **2025 May**: Significantly excited to be joining Meta in the Bay Area during the summer as a ML software engineering intern! (I came back quickly but the bay turned out to be really nice.)
 * **2025 Feb**: *"Collaborative and Efficient Personalization with Mixtures of Adaptors"* got accepted to [CPAL 2025](https://cpal.cc/proceedings_track/). (I'm going to visit Stanford!)
 * **2025 Jan**: Started a collaboration with [Sheikh Shakhbout Medical City (SSMC)](https://ssmc.ae), advised by [Dr. Siddiq Anwar](https://siddiqanwar.com), to explore federated AI applications in healthcare.
