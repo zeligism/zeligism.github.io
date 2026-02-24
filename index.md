@@ -18,9 +18,9 @@ Previously, I got my master degree in computer science at the University of Sout
 My interests lie at the intersection of machine learning and optimization. I am generally interested in:
 * collaborative learning (e.g., personalization in federated learning).
 * deep learning theory and optimization (e.g., overparameterization, adaptive algorithms).
-* generative models (GANs, in particular).
+* generative models (GANs, diffusion).
 
-My long-term vision is to have a network of intelligent systems that can learn more efficiently and adaptively together and tackle bigger, more complicated real-world problems collaboratively.
+My long-term vision is to build collaborative AI systems that learn efficiently together and coordinate to solve complex real-world problems.
 
 
 ### News
@@ -39,7 +39,11 @@ My long-term vision is to have a network of intelligent systems that can learn m
 ### Publications
 *See my [Google Scholar](https://scholar.google.com/citations?user=J7Qf4ZsAAAAJ) for an up to date list.*
 
-<!-- #### Preprint -->
+#### Preprint
+1. **Abdulla Jasem Almansoori**, Maria Ivanova, Andrey Veprikov, Aleksandr Beznosikov, Samuel Horváth, and Martin Takáč.
+*"Beyond SGD, Without SVD: Proximal Subspace Iteration LoRA with Diagonal Fractional K-FAC".* Arxiv.
+[\[paper\]](https://arxiv.org/abs/2602.16456v1)
+[\[code\]](https://github.com/zeligism/PSI-LoRA)
 
 #### Conference
 1. **Abdulla Jasem Almansoori**, Samuel Horváth, and Martin Takáč.
@@ -63,10 +67,26 @@ Transactions on Machine Learning Research (TMLR) 05/2024.
 [\[code\]](https://github.com/zeligism/PrecondUpdate)
 
 
-## Professional Experience
-* **Aug 2025 - Present**: Working as a **research intern in the Adaptive Bayesian Intelligence team at RIKEN-AIP** in Tokyo.
+#### Workshop
+1. **Abdulla Jasem Almansoori**, Maria Ivanova, Andrey Veprikov, Aleksandr Beznosikov, Samuel Horváth, and Martin Takáč.
+*"Faster Than SVD, Smarter Than SGD: The OPLoRA Alternating Update".* OPT 2025.
+[\[paper\]](https://arxiv.org/abs/2509.19977)
+[\[code\]](https://github.com/zeligism/OPLoRA)
 
-* **May 2025 - Aug 2025**: Joined the **Ads org at Meta** in Sunnyvale as an **intern**. During this internship, I understood many things about how machine learning is done and deployed in practice (hint: data matters). I'm proud that I was able to write code that my team found useful and will build on for future projects, and I was able to train models that will be used in production. Gaining a hands-on ML engineering experience turned out to be more valuable than gaining research experience in hindsight, even from a research perspective. The work culture also gave me a lot of insight on what I'd call "[frictionless](https://arxiv.org/abs/2310.00865) productivity".
+2. **Abdulla Jasem Almansoori**, Samuel Horváth, and Martin Takáč.
+*"PaDPaF: Partial Disentanglement with Partially-Federated GANs".* FLSys 2023 (oral).
+[\[paper\]](https://flsys.github.io)
+[\[code\]](https://github.com/zeligism/PaDPaF)
+
+## Professional Experience
+* **Aug 2025 - Feb 2026**: Working as a **research intern in the Adaptive Bayesian Intelligence team at RIKEN-AIP** in Tokyo,
+mainly with Thomas Möellenhoff and Emtiyaz Khan.
+I worked initially on modeling and designing random learning rates methods as a Bayesian Learning Rule method with a Normal-Wishart variational distribution.
+Shifted towards accelerated methods under Gaussians (Variational Newton Methods), then changed it to ``schedule-free''.
+**Paper coming soon.**
+Overall, I enjoyed working with bright and passionate colleagues, had many interesting conversations, learned more Japanse, explored Tokyo, and made great friends.
+
+* **May 2025 - Aug 2025**: Joined the **Ads org at Meta** in Sunnyvale as an **intern**. During this internship, I understood many things about how machine learning is done and deployed in practice (hint: data matters). I'm proud that I was able to write code that my team found useful and will build on for future projects, and I was able to train models that will be used in production. Gaining a hands-on ML engineering experience can be very valuable for ML researchers. The work culture also gave me a lot of insight on what I'd call "[frictionless](https://arxiv.org/abs/2310.00865) productivity".
 
 * **Feb 2021 - Jun 2022**: Started **national service** 6 months before PhD and finished after my first year.
 I finished **military boot camp**, and then got recruited by *Dubai Police* as a part of the *Expo 2020 batch*. I received airport security training in *Dubai International Airport (DXB)*, worked at *Expo 2020* as a **vehicle inspector** (from dusty trucks to shiny rolls royces), and then worked as a security guard again in *Al Maktoum International Airport (DWC)*.
@@ -83,12 +103,11 @@ The team was absolutely great and the work environment was chill (we used to wor
 I do enjoy my research, but I also have a lot of other interests. I love cooking (especially Italian cuisine). I also love travelling (especially for food).
 Other hobbies include: reading, video games (used to play kaizo-level Mario and ashamedly proud of it), anime/manga, learning languages (Japanese and Italian), photography (I have a Fuji X-T10), opening parentheses (like this one), and, of course, eating.
 
-<!-- One of the things that helped me start cooking is living abroad alone, and what kept me going is my family. -->
-I used to cook rice and chicken (machboos/kabsa) abroad because I wanted to survive and eat homey comfort food.
-Nowadays, sometimes I would be spending a day or two making lasagne or sourdough bread, and my whole family would devour the thing within minutes.
+One of the things that helped me start cooking is living abroad alone, and what kept me going is my family.
+I used to cook a rice and chicken dish (called machboos/kabsa) abroad because I wanted to survive and eat homey comfort food.
+Nowadays, I'd be spending a day or two making lasagne or sourdough, and my family would devour the thing within seconds.
 
-
-There is a beautiful sense of fulfillment you get when the people you care about become happy because of something you did. This gives me the motivation to cook more delicious food that draws a bigger smile on everyone. (I wish my publications have this kind of impact.)
+There is a beautiful sense of fulfillment when the people you care about become happy because of something you did. This gives me the motivation to cook more delicious food that draws a bigger smile on everyone. (I wish my papers have this kind of impact.)
 
 
 ## Contact Me
