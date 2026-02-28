@@ -12,7 +12,7 @@ layout: home
 My name is Abdulla Jasem Almansoori (عبدالله جاسم المنصوري). I started my PhD in machine learning at [Mohamed bin Zayed University of Artificial Intelligence](https://mbzuai.ac.ae) in 2021,
 where I am fortunate to be advised by [Martin Takáč](https://mtakac.com) and [Samuel Horváth](https://sites.google.com/view/samuelhorvath).
 Previously, I got my master degree in computer science at the University of Southern California in 2018, and before that I got my bachelor in industrial engineering at Purdue University in 2016.
-<!-- You can find my cv [here](assets/doc/cv.pdf). -->
+You can find my cv [here](assets/doc/cv.pdf).
 
 ## Research
 My interests lie at the intersection of machine learning and optimization. I am generally interested in:
@@ -75,7 +75,7 @@ Transactions on Machine Learning Research (TMLR) 05/2024.
 [\[code\]](https://github.com/zeligism/OPLoRA)
 
 2. **Abdulla Jasem Almansoori**, Samuel Horváth, and Martin Takáč.
-*"PaDPaF: Partial Disentanglement with Partially-Federated GANs".* FLSys 2023 (oral).
+*"PaDPaF: Partial Disentanglement with Partially-Federated GANs"* (Extended for TMLR). FLSys 2023 (oral).
 [\[paper\]](https://flsys.github.io)
 [\[code\]](https://github.com/zeligism/PaDPaF)
 
@@ -87,7 +87,7 @@ Shifted towards accelerated methods under Gaussians (Variational Newton Methods)
 **Paper coming soon.**
 Overall, I enjoyed working with bright and passionate colleagues, had many interesting conversations, learned more Japanse, explored Tokyo, and made great friends.
 
-* **May 2025 - Aug 2025**: Joined the **Ads org at Meta** in Sunnyvale as an **intern**. During this internship, I understood many things about how machine learning is done and deployed in practice (hint: data matters). I'm proud that I was able to write code that my team found useful and will build on for future projects, and I was able to train models that will be used in production. Gaining a hands-on ML engineering experience can be very valuable for ML researchers. The work culture also gave me a lot of insight on what I'd call "[frictionless](https://arxiv.org/abs/2310.00865) productivity".
+* **May 2025 - Aug 2025**: Joined the **Ads org at Meta** in Sunnyvale as an **intern**. During this internship, I understood many things about how machine learning is done and deployed in practice (hint: data matters). I'm proud that I was able to write code that my team found useful and will build on for future projects, and I was able to train models that will be used in production. Gaining a hands-on ML engineering experience can be very valuable for ML researchers. The work culture also gave me a lot of insight on what I'd call "frictionless productivity".
 
 * **Feb 2021 - Jun 2022**: Started **national service** 6 months before PhD and finished after my first year.
 I finished **military boot camp**, and then got recruited by *Dubai Police* as a part of the *Expo 2020 batch*. I received airport security training in *Dubai International Airport (DXB)*, worked at *Expo 2020* as a **vehicle inspector** (from dusty trucks to shiny rolls royces), and then worked as a security guard again in *Al Maktoum International Airport (DWC)*.
@@ -102,16 +102,17 @@ The team was absolutely great and the work environment was chill (we used to wor
 
 ## Hobbies
 I do enjoy my research, but I also have a lot of other interests. I love cooking (especially Italian cuisine). I also love travelling (especially for food).
-Other hobbies include: reading, video games (used to play kaizo-level Mario and ashamedly proud of it), anime/manga, learning languages (Japanese and Italian), photography (I have a Fuji X-T10), opening parentheses (like this one), and, of course, eating.
+Other hobbies include: reading, writing, coding, video games (used to play kaizo-level Mario and ashamedly proud of it), anime/manga, learning languages (Japanese and Italian), and opening parentheses (like this one).
+Recently, I've been reading some history and politics, which I found quite illuminating (they say history repeats itself for a reason).
 
-One of the things that helped me start cooking is living abroad alone, and what kept me going is my family.
+<!-- One of the things that helped me start cooking is living abroad alone, and what kept me going is my family.
 I used to cook a rice and chicken dish (called machboos/kabsa) abroad because I wanted to survive and eat homey comfort food.
 Nowadays, I'd be spending a day or two making lasagne or sourdough, and my family would devour the thing within seconds.
 
-There is a beautiful sense of fulfillment when the people you care about become happy because of something you did. This gives me the motivation to cook more delicious food that draws a bigger smile on everyone. (I wish my papers have this kind of impact.)
+There is a beautiful sense of fulfillment when the people you care about become happy because of something you did. This gives me the motivation to cook more delicious food that draws a bigger smile on everyone. (I wish my papers have this kind of impact.) -->
 
 
 ## Contact Me
 You can contact me at **abdu.\[middle name\]@gmail.com**.
-#### *Note regarding my middle name* (which doubles as an interesting way to fool bots)
+#### *Fun fact regarding my middle name*
 It is customary to use the naming format *\[first name + father's name (+ desired number of ancestors) + last name\]* in the arab world because many people share the same *first + last* name (e.g. imagine being called John Smith). We use the shortest length that can sufficiently distinguish us in the given setting. In the US, I would use the standard two-name format (*first + last*) as it is slightly unlikely to see another person sharing the same name abroad at the same institution, for example (though it is still possible). In research, I would use three names (*first + father + last*) because there could be another researcher in marine biology called Abdulla Almansoori, for example. During my national service, however, I had to use four or even five names! You would be surprised at how many times people sharing the same 3-name have been confused for each other (either *first + father + grandfather* or *first + father + last*), especially when the assembly list is sorted alphabetically.
