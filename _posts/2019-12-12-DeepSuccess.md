@@ -66,7 +66,7 @@ Can't we define our own success and live by it?
 Notice that it all depends on the society itself.
 There is nothing holding any society back from championing prostitutes and putting them at the pinnacle of the success pyramid.
 
-Then, what is a successful man? [A miserable little pile of ideals.](https://legendsoflocalization.com/lets-investigate-a-miserable-pile-of-secrets/)
+Dracula said it best: "what is a successful man? A miserable little pile of ideals."
 Success is not a absolute quality of inherent goodness.
 What might be successful to you can be a failure to the rest of the world, and vice versa.
 Evil characters are successful at being the antagonists, right?
@@ -90,8 +90,8 @@ To be *deeply successful* is to live happily (convinced and content with your cu
 You have to be, overall, *convinced that your life is good*.
 I mean, it might seem exaggerated in simplicity, but it is not.
 But think about it.
-Money is only about power (and [France is not Bacon](https://thehabit.co/knowledge-is-power-france-is-bacon/)).
-It buys comfort and influence, including temporary pleasures such as food and sex.
+Money is power (and [France is Bacon](https://thehabit.co/knowledge-is-power-france-is-bacon/)).
+It buys comfort and influence, including temporary pleasures.
 Fame and respect gives you more validity.
 Looking at it, it's mainly about feeling fulfilled and valid while having the resources to maintain it.
 Apart from having enough resources, this feeling of self-fulfillment and validation is totally in our heads and under our control (within the limits of our psychological nature).
@@ -109,5 +109,5 @@ The curiosity of the mind can lead us to the stars of success or to the depths o
 Try to be content with yourself and your life.
 The materialistic kind of success depends a lot on your luck in life.
 You can't avoid your fate, and you can't change your parents. Accept the flow of life.
-Or as Void from Berserk puts it: "*Everything is within the flows of Causality*".
+Or as Void puts it succinctly: "*Everything is within the flows of Causality*".
 Just live and be thankful for what you have.

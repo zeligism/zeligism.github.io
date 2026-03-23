@@ -24,7 +24,7 @@ My long-term vision is to build collaborative AI systems that learn efficiently 
 
 
 ### News
-* **2025 Sep**: *"Faster Than SVD, Smarter Than SGD: The OPLoRA Alternating Update"* got accepted to [OPT 2025 workshop](https://opt-ml.org/index.html)!
+* **2025 Sep**: *"Faster Than SVD, Smarter Than SGD: The OPLoRA Alternating Update"* got accepted to [OPT 2025 workshop](https://opt-ml.org/index.html).
 * **2025 Aug**: Non-trivially happy that I'll be a research intern at RIKEN-AIP in the heart of Tokyo! I'll be hosted by [Emtiyaz Khan](https://emtiyaz.github.io) in his [Adaptive Bayesian Intelligence](https://adaptive-bayesian.ai) team. Looking forward to this wonderful opportunity!
 * **2025 May**: Significantly excited to be joining Meta in the Bay Area during the summer as a ML software engineering intern! (I came back quickly but the bay turned out to be really nice.)
 * **2025 Feb**: *"Collaborative and Efficient Personalization with Mixtures of Adaptors"* got accepted to [CPAL 2025](https://cpal.cc/proceedings_track/). (I'm going to visit Stanford!)
@@ -83,7 +83,7 @@ Transactions on Machine Learning Research (TMLR) 05/2024.
 * **Aug 2025 - Feb 2026**: Working as a **research intern in the Adaptive Bayesian Intelligence team at RIKEN-AIP** in Tokyo,
 mainly with Thomas Möellenhoff and Emtiyaz Khan.
 I worked initially on modeling and designing random learning rates methods as a Bayesian Learning Rule method with a Normal-Wishart variational distribution.
-Shifted towards accelerated methods under Gaussians (Variational Newton Methods), then changed it to ``schedule-free''.
+Shifted towards accelerated methods under Gaussians (Variational Newton Methods), then changed it to "schedule-free".
 **Paper coming soon.**
 Overall, I enjoyed working with bright and passionate colleagues, had many interesting conversations, learned more Japanse, explored Tokyo, and made great friends.
 
@@ -102,7 +102,7 @@ The team was absolutely great and the work environment was chill (we used to wor
 
 ## Hobbies
 I do enjoy my research, but I also have a lot of other interests. I love cooking (especially Italian cuisine). I also love travelling (especially for food).
-Other hobbies include: reading, writing, coding, video games (used to play kaizo-level Mario and ashamedly proud of it), anime/manga, learning languages (Japanese and Italian), and opening parentheses (like this one).
+Other hobbies include: reading, writing, coding, video games (used to play kaizo-level Mario and ashamedly proud of it), learning languages (Japanese and Italian), opening parentheses (like this one), and just chilling.
 Recently, I've been reading some history and politics, which I found quite illuminating (they say history repeats itself for a reason).
 
 <!-- One of the things that helped me start cooking is living abroad alone, and what kept me going is my family.
