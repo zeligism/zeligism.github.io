@@ -80,22 +80,29 @@ Transactions on Machine Learning Research (TMLR) 05/2024.
 [\[code\]](https://github.com/zeligism/PaDPaF)
 
 ## Professional Experience
-* **Aug 2025 - Feb 2026**: Working as a **research intern in the Adaptive Bayesian Intelligence team at RIKEN-AIP** in Tokyo,
-mainly with Thomas Möellenhoff and Emtiyaz Khan.
-I worked initially on modeling and designing random learning rates methods as a Bayesian Learning Rule method with a Normal-Wishart variational distribution.
-Shifted towards accelerated methods under Gaussians (Variational Newton Methods), then changed it to "schedule-free".
-**Paper coming soon.**
-Overall, I enjoyed working with bright and passionate colleagues, had many interesting conversations, learned more Japanse, explored Tokyo, and made great friends.
+* **Aug 2025 - Feb 2026**: Working as a **research intern in the Adaptive Bayesian Intelligence team at RIKEN-AIP** in Tokyo, mainly with Thomas Möellenhoff and Emtiyaz Khan.
+<span class="hidden-text" hidden>
+I worked initially on modeling and designing random learning rates methods as a Bayesian Learning Rule method with a Normal-Wishart variational distribution. Shifted towards accelerated methods under Gaussians (Variational Newton Methods), then changed it to "schedule-free". **Paper coming soon.** Overall, I enjoyed working with bright and passionate colleagues, had many interesting conversations, learned more Japanse, explored Tokyo, and made great friends.
+</span>
+<a href="#" class="hidden-text-toggle">[show more]</a>
 
-* **May 2025 - Aug 2025**: Joined the **Ads org at Meta** in Sunnyvale as an **intern**. During this internship, I understood many things about how machine learning is done and deployed in practice (hint: data matters). I'm proud that I was able to write code that my team found useful and will build on for future projects, and I was able to train models that will be used in production. Gaining a hands-on ML engineering experience can be very valuable for ML researchers. The work culture also gave me a lot of insight on what I'd call "frictionless productivity".
+* **May 2025 - Aug 2025**: Joined the **Ads org at Meta** in Sunnyvale as an **intern**.
+<span class="hidden-text" hidden>
+During this internship, I understood many things about how machine learning is done and deployed in practice (hint: data matters). I'm proud that I was able to write code that my team found useful and will build on for future projects, and I was able to train models that will be used in production. Gaining a hands-on ML engineering experience can be very valuable for ML researchers. The work culture also gave me a lot of insight on what I'd call "frictionless productivity".
+</span>
+<a href="#" class="hidden-text-toggle">[show more]</a>
 
-* **Feb 2021 - Jun 2022**: Started **national service** 6 months before PhD and finished after my first year.
-I finished **military boot camp**, and then got recruited by *Dubai Police* as a part of the *Expo 2020 batch*. I received airport security training in *Dubai International Airport (DXB)*, worked at *Expo 2020* as a **vehicle inspector** (from dusty trucks to shiny rolls royces), and then worked as a security guard again in *Al Maktoum International Airport (DWC)*.
-It had been a great, diverse, mind-opening, humbling experience overall with a slightly hectic shift schedule and long commutes balanced with PhD studies on the side.
+* **Feb 2021 - Jun 2022**: Started **national service** 6 months before my PhD, and finished after my first year.
+<span class="hidden-text" hidden>
+I finished **military boot camp**, and then got recruited by *Dubai Police* as a part of the *Expo 2020 batch*. I received airport security training in *Dubai International Airport (DXB)*, worked at *Expo 2020* as a **vehicle inspector** (from dusty trucks to shiny rolls royces), and then worked as a security guard again in *Al Maktoum International Airport (DWC)*. It had been a great, diverse, mind-opening, humbling experience overall with a slightly hectic shift schedule and long commutes balanced with PhD studies on the side.
+</span>
+<a href="#" class="hidden-text-toggle">[show more]</a>
 
-* **Jan 2020 - Feb 2021**: Worked as a **research assistant** in the *Center of Genomics and Systems Biology* at *New York University - Abu Dhabi campus* for about a year before my PhD, where I was sponsored by the Kawader research assistantship. I was part of the core **bioinformatics** team.
-I worked on next-generation sequencing pipelines, mostly submitting slurm jobs of AI-based bioinformatics tools.
-The team was absolutely great and the work environment was chill (we used to work from home before it was a thing).
+* **Jan 2020 - Feb 2021**: Worked as a **research assistant** in the *Center of Genomics and Systems Biology* at *New York University - Abu Dhabi*.
+<span class="hidden-text" hidden>
+I was there for about a year before my PhD, where I was sponsored by the Kawader research assistantship. I was part of the core **bioinformatics** team, working on next-generation sequencing pipelines, mostly submitting slurm jobs of AI-based bioinformatics tools. The team was absolutely great and the work environment was chill (we used to work from home before it was a thing).
+</span>
+<a href="#" class="hidden-text-toggle">[show more]</a>
 
 
 
@@ -103,7 +110,7 @@ The team was absolutely great and the work environment was chill (we used to wor
 ## Hobbies
 I do enjoy my research, but I also have a lot of other interests. I love cooking (especially Italian cuisine) and travelling (especially for food).
 Other hobbies include: reading, writing, coding (used to be fun before LLMs), video games (would love to have more time for this), learning languages (Japanese and Italian, slowly but surely), and opening parentheses (like this one).
-Recently, I've been reading some history and politics, which I found quite illuminating (they say history repeats itself for a reason).
+Recently, I've been reading some history and politics, which I find quite illuminating (they say history repeats itself for a reason).
 
 <!-- One of the things that helped me start cooking is living abroad alone, and what kept me going is my family.
 I used to cook a rice and chicken dish (called machboos/kabsa) abroad because I wanted to survive and eat homey comfort food.
@@ -115,4 +122,11 @@ There is a beautiful sense of fulfillment when the people you care about become 
 ## Contact Me
 You can contact me at **abdu.\[middle name\]@gmail.com**.
 #### *Fun fact regarding my middle name*
+<span class="hidden-text" hidden>
 It is customary to use the naming format *\[first name + father's name (+ desired number of ancestors) + last name\]* in the arab world because many people share the same *first + last* name (e.g. imagine being called John Smith). We use the shortest length that can sufficiently distinguish us in the given setting. In the US, I would use the standard two-name format (*first + last*) as it is slightly unlikely to see another person sharing the same name abroad at the same institution, for example (though it is still possible). In research, I would use three names (*first + father + last*) because there could be another researcher in marine biology called Abdulla Almansoori, for example. During my national service, however, I had to use four or even five names! You would be surprised at how many times people sharing the same 3-name have been confused for each other (either *first + father + grandfather* or *first + father + last*), especially when the assembly list is sorted alphabetically.
+In fact, I once saw an Emirati guy on Instagram who shares my *first + father + grandfather + last* name!
+</span>
+<a href="#" class="hidden-text-toggle">[show more]</a>
+
+
+<script src="{{ '/assets/js/text-toggle.js' | relative_url }}"></script>
