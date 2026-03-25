@@ -25,12 +25,12 @@ My long-term vision is to build collaborative AI systems that learn efficiently 
 
 ### News
 * **2025 Sep**: *"Faster Than SVD, Smarter Than SGD: The OPLoRA Alternating Update"* got accepted to [OPT 2025 workshop](https://opt-ml.org/index.html).
-* **2025 Aug**: Non-trivially happy that I'll be a research intern at RIKEN-AIP in the heart of Tokyo! I'll be hosted by [Emtiyaz Khan](https://emtiyaz.github.io) in his [Adaptive Bayesian Intelligence](https://adaptive-bayesian.ai) team. Looking forward to this wonderful opportunity!
+* **2025 Aug**: Non-trivially happy that I'll be a research intern at RIKEN-AIP in the heart of Tokyo! I'll be hosted by [Emtiyaz Khan](https://emtiyaz.github.io) in his [Adaptive Bayesian Intelligence](https://adaptive-bayesian.ai) team.
 * **2025 May**: Significantly excited to be joining Meta in the Bay Area during the summer as a ML software engineering intern! (I came back quickly but the bay turned out to be really nice.)
 * **2025 Feb**: *"Collaborative and Efficient Personalization with Mixtures of Adaptors"* got accepted to [CPAL 2025](https://cpal.cc/proceedings_track/). (I'm going to visit Stanford!)
 * **2025 Jan**: Started a collaboration with [Sheikh Shakhbout Medical City (SSMC)](https://ssmc.ae), advised by [Dr. Siddiq Anwar](https://siddiqanwar.com), to explore federated AI applications in healthcare.
 * **2024 Nov**: Presented a poster at [The ADIA Lab Symposium 2024](https://www.adialab.ae/symposium). (Nobel prize winners and Turing laureates speaking!)
-* **2024 July**: Really proud to have received the [Best Reviewer Award at ICML 2024](https://x.com/icmlconf/status/1815647580577059312)! (Fun fact: I've never been to ICML.)
+* **2024 July**: Really proud to have received the [Best Reviewer Award at ICML 2024](https://x.com/icmlconf/status/1815647580577059312). (Fun fact: I've never been to ICML.)
 * **2024 May**: "*PaDPaF: Partial Disentanglement with Partially-Federated GANs*" got accepted to [TMLR](https://openreview.net/forum?id=vsez76EAV8).
 * **2023 Dec**: Presented a poster in the [2nd collaborative learning workshop at MBZUAI](https://mbzuai-cl.github.io/2023/) on federated personalization with mixtures of LoRAs. (Great speakers list!)
 * **2023 Sep**: "*Byzantine-Tolerant Methods for Distributed Variational Inequalities*" got accepted to [NeurIPS 2023](https://nips.cc/virtual/2023/poster/72322). (I'll be going to present the poster.)
