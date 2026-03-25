@@ -101,8 +101,8 @@ The team was absolutely great and the work environment was chill (we used to wor
 
 
 ## Hobbies
-I do enjoy my research, but I also have a lot of other interests. I love cooking (especially Italian cuisine). I also love travelling (especially for food).
-Other hobbies include: reading, writing, coding, video games (used to play kaizo-level Mario and ashamedly proud of it), learning languages (Japanese and Italian), opening parentheses (like this one), and just chilling.
+I do enjoy my research, but I also have a lot of other interests. I love cooking (especially Italian cuisine) and travelling (especially for food).
+Other hobbies include: reading, writing, coding (used to be fun before LLMs), video games (would love to have more time for this), learning languages (Japanese and Italian, slowly but surely), and opening parentheses (like this one).
 Recently, I've been reading some history and politics, which I found quite illuminating (they say history repeats itself for a reason).
 
 <!-- One of the things that helped me start cooking is living abroad alone, and what kept me going is my family.

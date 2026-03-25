@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Deep Success"
+title:  "Deep Successing"
 date:   2020-12-12 00:00:00 +0400
 ---
 
@@ -16,7 +16,7 @@ If you rely on your own opinion, then you will likely end up having delusions of
 If you rely on society’s opinion, then you might end up living like a robot; going through a pre-defined life of typical, boring success.
 Both options are viable, but something in between ought to hit the sweet spot where you can find the right mix of satisfying internal opinions (one’s validation of oneself) and external opinions (others’ validation of oneself).
 
-Looking at it this way, we might, after all, be trying to satisfy everybody’s definition of success---including ours, of course---to varying degrees that depend on complex social relationships.
+Looking at it this way, we might, after all, be trying to satisfy everybody’s definition of success—including ours, of course—to varying degrees that depend on complex social relationships.
 For example, satisfying your family is more important than satisfying a bunch of strangers you saw on the street who wants you to pay for their bus ticket home.
 The more attached you are to a group of people, the more you want to satisfy their standards of success and seek their validations.
 People who fall in love, for example, might do some crazy stuff just to seek the validation of their potential partners (i.e., crush) since they are very strongly attached to them.

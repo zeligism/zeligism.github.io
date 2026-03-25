@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Value of Life"
+title:  "The (Economic) Value of Life"
 date:   2020-08-02 23:55:27 +0400
 ---
 
