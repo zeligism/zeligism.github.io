@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Ye Olde Causal Inference: A Cholera Case Study
+title:  "Ye Olde Causal Inference: A Cholera Case Study"
 date:   2025-12-28 15:42:43 +0900
 academic: false
 ---
 
-In 1855, John Snow—-the English physician, not the prince of Dragonstone—-presented a compelling study arguing that cholera was caused by a living organism that contaminates water or food and then multiplies within the body, an argument that preceded the foundations of modern microbiology by twenty years. For comparison, other hypotheses at the time were: miasma (bad air), poison on the ground, or an “imbalance in the humors of the body.” What is especially interesting in hindsight is how Snow demonstrated this causation, which was basically through **experimental design and bias mitigation** rather than by extracting a signal from sampling noise. In particular, sampling error and p-values were not central to his argument.
+In 1855, John Snow—the English physician, not the prince of Dragonstone—presented a compelling study arguing that cholera was caused by a living organism that contaminates water or food and then multiplies within the body, an argument that preceded the foundations of modern microbiology by twenty years. For comparison, other hypotheses at the time were: miasma (bad air), poison on the ground, or an “imbalance in the humors of the body.” What is especially interesting in hindsight is how Snow demonstrated this causation, which was basically through **experimental design and bias mitigation** rather than by extracting a signal from sampling noise. In particular, sampling error and p-values were not central to his argument.
 
 Some of the observations that led Snow to reach his conclusion were:
 1. The lag between exposure and symptoms, which is easier to explain by the multiplication of the cause in the body.
@@ -43,6 +43,6 @@ Naturally, there is a strong desire to substitute intellectual capital for labor
 
 ~
 
-The takeaway lesson about Snow’s work is this: *causal inference depends less on statistical rituals than on designing comparisons that mitigate bias.*
+The lesson that you should take away from Snow’s work is this: *causal inference depends less on statistical rituals than on designing comparisons that mitigate bias.*
 
 [1] “*Association to Causation: Some Remarks on the History of Statistics*”. David Freedman. Statistical Science 1999.

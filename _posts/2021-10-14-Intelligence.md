@@ -4,7 +4,7 @@ title:  "A Stupid Analysis of Intelligence"
 date:   2021-10-14 02:18:19 +0400
 ---
 
-Consider this machine learning-inspired definition of intelligence. Intelligence is a relative property such that one is more intelligent, *with respect to an expectation over a distribution of tasks*, if: 1) one has a better model of some task with respect to some metric (i.e., that measures performance), and 2) one converges towards a "good" model of some task more quickly with respect to some performance constraint using the metric, i.e. performs the task well enough with a lesser amount of work or action. Note that we need: 1) a distribution of tasks, 2) a metric to measure the performance of the model, and 3) a performance constraint for a good enough model (I guess this is optional if an optimal model exists and is tractable).
+Consider this machine learning-inspired definition of intelligence. Intelligence is a relative property such that one is more intelligent, *with respect to a distribution of tasks and a metric*, if: 1) one has a "better" model of the tasks under the given metric, and 2) one converges towards a "good" model of the tasks more quickly under a performance constraint on the metric (i.e. should perform well enough with less work or action). Note that we need: 1) a distribution of tasks, 2) a metric that measures the performance of the model on tasks from this distribution, and 3) a performance constraint for a good enough model.
 
 Now, the million dollar question: Einstein or Newton?
 You knew it was coming.
