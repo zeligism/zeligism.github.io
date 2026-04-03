@@ -5,7 +5,7 @@ date:   2025-12-28 15:42:43 +0900
 academic: false
 ---
 
-In 1855, John Snow—the English physician, not the prince of Dragonstone—presented a compelling study arguing that cholera was caused by a living organism that contaminates water or food and then multiplies within the body, an argument that preceded the foundations of modern microbiology by twenty years. For comparison, other hypotheses at the time were: miasma (bad air), poison on the ground, or an “imbalance in the humors of the body.” What is especially interesting in hindsight is how Snow demonstrated this causation, which was basically through **experimental design and bias mitigation** rather than by extracting a signal from sampling noise. In particular, sampling error and p-values were not central to his argument.
+In 1855, John Snow (the English physician, not the prince of Dragonstone) presented a compelling study arguing that cholera was caused by a living organism that contaminates water or food and then multiplies within the body, an argument that preceded the foundations of modern microbiology by twenty years. For comparison, other hypotheses at the time were: miasma (bad air), poison on the ground, or an “imbalance in the humors of the body.” What is especially interesting in hindsight is how Snow demonstrated this causation, which was basically through **experimental design and bias mitigation** rather than by extracting a signal from sampling noise. In particular, sampling error and p-values were not central to his argument.
 
 Some of the observations that led Snow to reach his conclusion were:
 1. The lag between exposure and symptoms, which is easier to explain by the multiplication of the cause in the body.
@@ -29,11 +29,11 @@ Elsewhere, rival theories produced surprisingly different interventions. In New 
 
 Snow’s bold hypothesis may look obvious in hindsight, but some prominent physicians were still hesitant to accept it, even after the seminal work of Koch and Pasteur in microbiology and vaccination twenty years later. For example, in Hamburg, as late as 1892, von Pettenkofer—a leading figure in the hygiene movement in Germany—was still happy with the “poison on the ground” theory. He was so committed to this view that he famously drank a vial of cholera cultures to prove that the organism alone couldn’t cause disease without the right soil conditions. (He got diarrhea for a few days but turned out fine. Vindication!) The interventions based on this “poison on the ground” theory were vile: people had to “dig up and haul away the carcasses of dead animals in order to reduce pollution”. Yikes! Cholera cases still did not decrease, so Hamburg people lost faith in von Pettenkofer and eventually turned to Koch’s microbiology.
 
-Meanwhile, neighboring Altona drew from the same Elbe river but sand-filtered its water, and had far fewer cases—yet another comparison that required no p-value to interpret.
+Meanwhile, neighboring Altona drew from the same Elbe river but *sand-filtered its water*, and had far fewer cases—yet another comparison that required no p-value to interpret.
 
 ~
 
-This priority of design over analysis is precisely the point Freedman drives home more than a century later.
+This priority of **design over analysis** is precisely the point Freedman drives home more than a century later.
 His paper [1], which I came across on Ben Recht’s blog, has further interesting historical accounts. I’ll close with an excerpt from its conclusion here, which captures the essence of the manuscript and the purpose of this post:
 
 > Snow’s work on cholera, among other examples, shows that sound causal inferences can be drawn from nonexperimental data. […]
