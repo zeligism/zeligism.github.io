@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  Three Ways to Escape to Infinity, and One More
+title:  Three Ways to Escape to Infinity (and One More)
 date:   2025-11-02 20:42:43 +0900
 academic: true
 ---
+
+DRAFT
 
 The concept of infinity is central to math and is arguably one of the fundamental phenomena on which calculus and modern analysis are built on.
 
