@@ -24,8 +24,9 @@ My long-term vision is to build collaborative AI systems that learn efficiently 
 
 
 ### News
+* **2026 Mar**: I successfully defended my PhD thesis, "Adapters for Collaborative Learning: Personalization and Structure-Aware Optimization"! I'm grateful for having such a great thesis committee. (Here's a nice [photo](/assets/img/Screenshot%202026-03-31%20at%204.27.41 PM.png) with them.)
 * **2025 Sep**: *"Faster Than SVD, Smarter Than SGD: The OPLoRA Alternating Update"* got accepted to [OPT 2025 workshop](https://opt-ml.org/index.html).
-* **2025 Aug**: Non-trivially happy that I'll be a research intern at RIKEN-AIP in the heart of Tokyo! I'll be hosted by [Emtiyaz Khan](https://emtiyaz.github.io) in his [Adaptive Bayesian Intelligence](https://adaptive-bayesian.ai) team.
+* **2025 Aug**: Non-trivially happy that I'll be a research intern at RIKEN-AIP in Tokyo! I'll be hosted by [Emtiyaz Khan](https://emtiyaz.github.io) in his [Adaptive Bayesian Intelligence](https://adaptive-bayesian.ai) team.
 * **2025 May**: Significantly excited to be joining Meta in the Bay Area during the summer as a ML software engineering intern! (I came back quickly but the bay turned out to be really nice.)
 * **2025 Feb**: *"Collaborative and Efficient Personalization with Mixtures of Adaptors"* got accepted to [CPAL 2025](https://cpal.cc/proceedings_track/). (I'm going to visit Stanford!)
 * **2025 Jan**: Started a collaboration with [Sheikh Shakhbout Medical City (SSMC)](https://ssmc.ae), advised by [Dr. Siddiq Anwar](https://siddiqanwar.com), to explore federated AI applications in healthcare.
@@ -109,14 +110,10 @@ I was there for about a year before my PhD, where I was sponsored by the Kawader
 
 ## Hobbies
 I do enjoy my research, but I also have a lot of other interests. I love cooking (especially Italian cuisine) and travelling (especially for food).
-Other hobbies include: reading, writing, coding (used to be fun before LLMs), video games (would love to have more time for this), learning languages (Japanese and Italian, slowly but surely), and opening parentheses (like this one).
+Other hobbies include: reading (everything), writing (nothing), coding (used to be fun), video games (I'd like to have more time for this), learning languages (Japanese and Italian, slowly but surely), photography (I own a dusty Fujifilm X-T10), and opening parentheses (like this one).
 Recently, I've been reading some history and politics, which I find quite illuminating (they say history repeats itself for a reason).
 
-<!-- One of the things that helped me start cooking is living abroad alone, and what kept me going is my family.
-I used to cook a rice and chicken dish (called machboos/kabsa) abroad because I wanted to survive and eat homey comfort food.
-Nowadays, I'd be spending a day or two making lasagne or sourdough, and my family would devour the thing within seconds.
-
-There is a beautiful sense of fulfillment when the people you care about become happy because of something you did. This gives me the motivation to cook more delicious food that draws a bigger smile on everyone. (I wish my papers have this kind of impact.) -->
+There is a beautiful sense of fulfillment when the people you care about become happy because of something you did. This, for example, gives me the motivation to cook more delicious food that draws a bigger smile on everyone. I wish my papers have this kind of impact, too. Let me cook.
 
 
 ## Contact Me

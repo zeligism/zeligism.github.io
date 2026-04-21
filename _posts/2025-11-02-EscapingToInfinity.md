@@ -1,45 +1,55 @@
 ---
 layout: post
-title:  Three Ways to Escape to Infinity (and One More)
+title:  Four Ways to Escape to Infinity
 date:   2025-11-02 20:42:43 +0900
 academic: true
 ---
 
-DRAFT
+Escaping *from* infinity is different from escaping *to* infinity.
+When we say infinity, we are refering to some measureable quantity that becomes unbounded as we *go further*.
+When a thing escapes to infinity, its measure is always *finite* but somehow able becomes infinite as it evolves due to various degeneracies in the measurements.
 
-The concept of infinity is central to math and is arguably one of the fundamental phenomena on which calculus and modern analysis are built on.
+Consider this weird argument that I just came up with because why not.
+Let's say we're measuring speed.
+So, you're running in a competition, and you come back to me and ask, "what was my speed?"
+And I basically answer: "$$c$$. You were running at the speed of light."
+Ok, this doesn't make sense from a physics point of view, but hear me out.
+I was just counting every particle that you consists of to be **you**, including your photons.
+But photons are massless, so we can avoid such degenerate cases by measuring the speed of the non-massless stuff on you.
+That is *almost* you. Get it?
 
-Interestingly, as absurd as it may sound to those who haven't heard of Cantor, one infinity can be "bigger" than another infinity! A concrete example is the infinite count of the natural numbers (one, two, three, etc) and the real numbers (0.001, 0.1, 0.99999, 1.5, etc). Even the real interval $[0,1]$ itself is bigger than the natural numbers.
+---
 
-Anyway, the kind of infinity we are interested in here is the *convergence of an infinite sequence*.
-The canonical example is the sequence:
+Say our measurement function is $$f$$, so when we measure a state $$x$$, the measurement is $$f(x)$$.
+The measure across many states is $$\sum_x f(x)$$ or $$\int f(x) dx$$.
+Measure theory studies measurements that behave nicely.
+But measure theorists are naughty, so they came up with various functions that do not behave nicely.
 
-$$
-x_n = 1/n.
-$$
+Let's make the term "behaves nicely" more concrete.
+Measures should satisfy a bunch of axioms, the most obvious of which are non-negativeness $$f(x) \ge 0, \forall x \in X$$ and finiteness $$m(X) = \int_X f(x) dx < \infty$$.
+Instead of vague finiteness, we ask it to satisfy the normalized value of 1, i.e., $$m(X) = 1$$.
 
-As $n \to \infty$, we have $x_n \to 0$.
+Measurements that behave nicely are *robust* in the sense that the "magnitude" is finite, and by magnitude, we mean norm.
+The $$L^p$$ norm of $$f$$ is $$\big( \int \lvert f(x) \rvert^p dx \big)^{1/p}$$.
+Since $$f$$ is always non-negative, it should be clear that we have chosen the $L^1$ norm to canonical measure of $$f$$ on $$X$$.
 
-When infinity is paired with *functions*, we get a whole new can of worms.
-The function can converge either *point-wise* or *uniformly*.
-And then we have measurements, under which convergence depend on the norm we consider, e.g., $L^1$, $L^2$, or $L^\infty$.
-These constitute a major part of what measure theory tries to precisely characterize.
+This gets more complicated because measure theorists are really naughty, but also really smart.
+Sometimes, you may want to surround your enemy everywhere, slowly close in on them, and then make sure to capture them without having them escape.
+Measure theorists do this to some function of interest by studying a sequence of functions that converge to it, i.e., $$f_n \to f$$ as $$n \to \infty$$.
+The function can converge in two ways, either *point-wise* or *uniformly*, depending on how we measure the difference.
 
-~
+Let us consider a simple construction.
+Suppose my measurement function is really naughty and oscillates wildly within a range of, say, $$[0, \epsilon]$$.
 
-> A function can have a measure of one, yet vanishes—journeying beyond the infinite horizon.
+TODO: show a simple example about the "epsilon of room" trick.
 
-> A function can have a measure of one, yet vanishes—diffusing itself infinitely.
+---
 
-> A function can have a measure of one, yet vanishes—selling its soul to reach the infinite heights.
-
-> A function can wander infinitely back and forth, losing its measure of one along the way—and its point in life.
+A measure can be finite, yet its measurement vanishes—journeying beyond the infinite horizon, diffusing itself infinitely, selling its soul to reach the infinite heights, or wandering back and forth and dying slowly.
 
 This isn’t Zen poetry. These are convergence phenomena of some exotic functions. It’s a peculiarity of measure theory that makes it simultaneously intriguing yet boring at the same time.
 
-The above functions correspond respectively to examples 1.5.2, 1.5.3, 1.5.4, and 1.5.5 of “An Introduction to Measure Theory” by Terrence Tao.
-Let us get into the details.
-
+The above functions correspond respectively to examples 1.5.2-5 of “An Introduction to Measure Theory” by Terrence Tao.
 
 
 ## Escaping into horizontal infinity.
@@ -67,7 +77,7 @@ $$
 ## Escaping into height infinity.
 AKA *escaping into vertical infinity*.
 
-I thought calling *height infinity* is more accurate since it is the reflected version of the *width infinity* case (reflected about the y=x line).
+I thought calling it *height infinity* is more accurate since it is almost a reflected version of the *width infinity* case.
 
 $$
 f_n(x) = n\,1_{[1/n,\,2/n]}(x)
@@ -114,5 +124,11 @@ The above functions and their convergences can be summarized the the tables belo
 
 ~
 
-Oftentimes, measure theory is solely embraced as a scarecrow against those who get easily intimidated by rigor. For example, people like to say “sigma algebra” in the most unnecessary places. Perhaps the most important lesson I learned after I skimmed Tao’s book is that edge cases are the force that pushes us into narrower and more sophisticated mathematics. We specialize and generalize our definitions to rigorously cover all of those cases, but at the end of the day, what I need as a machine learning researcher is quite simple: something that works almost everywhere and allows swapping differentials and integrals.
+Oftentimes, measure theory is solely embraced as a scarecrow against those who get easily intimidated by rigor.
+For example, some researchers *love* to say “sigma algebra” whenever they can and in the most unnecessary places.
+It's like flexing your muscles during an interview.
 
+Perhaps the most important lesson I learned after I skimmed Tao’s book is that edge cases are the force that pushes us into narrower and more sophisticated mathematics.
+We specialize and generalize our definitions to rigorously cover all of those cases.
+But at the end of the day, what I need as a machine learning researcher is quite simple: something that works almost everywhere and allows swapping differentials and integrals.
+Keep your sigma boy out of my face.
