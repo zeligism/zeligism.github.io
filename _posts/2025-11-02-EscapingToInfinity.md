@@ -6,16 +6,20 @@ academic: true
 ---
 
 Escaping *from* infinity is different from escaping *to* infinity.
-When we say infinity, we are refering to some measureable quantity that becomes unbounded as we *go further*.
-When a thing escapes to infinity, its measure is always *finite* but somehow able becomes infinite as it evolves due to various degeneracies in the measurements.
+When we say infinity, we are refering to a measureable quantity that becomes unbounded as we *go further* in some sense.
+When a thing escapes to infinity, its measure is *finite* but somehow able to become infinite eventually,
+often due to degeneracies in the way we measure the quantity.
+
+*[STILL A DRAFT]*
 
 Consider this weird argument that I just came up with because why not.
 Let's say we're measuring speed.
-So, you're running in a competition, and you come back to me and ask, "what was my speed?"
-And I basically answer: "$$c$$. You were running at the speed of light."
-Ok, this doesn't make sense from a physics point of view, but hear me out.
-I was just counting every particle that you consists of to be **you**, including your photons.
-But photons are massless, so we can avoid such degenerate cases by measuring the speed of the non-massless stuff on you.
+So, you're running in a competition, running forever.
+You send me a message while running and ask me: "what is my speed?"
+And I tell you: "$$c$$."
+Ok, I know this doesn't make sense for physicists, but hear me out.
+I was just counting every particle that you consists of to be **you**, including your photons, which I can trace and measure.
+Since photons are massless, we can avoid this degenerate measurement by considering only non-massless stuff that you consists of.
 That is *almost* you. Get it?
 
 ---
@@ -45,9 +49,9 @@ TODO: show a simple example about the "epsilon of room" trick.
 
 ---
 
-A measure can be finite, yet its measurement vanishes—journeying beyond the infinite horizon, diffusing itself infinitely, selling its soul to reach the infinite heights, or wandering back and forth and dying slowly.
+A *human* can be finite, yet his *soul* vanishes—journeying beyond the infinite horizon, diffusing infinitely, reaching the infinite heights, or wandering back and forth infinitely—and dies slowly but surely.
 
-This isn’t Zen poetry. These are convergence phenomena of some exotic functions. It’s a peculiarity of measure theory that makes it simultaneously intriguing yet boring at the same time.
+This isn’t Zen poetry. These are convergence phenomena of some exotic functions, where "human" and "soul" stand for $$m$$ and $$f$$. It’s a peculiarity of measure theory that makes it simultaneously intriguing yet boring at the same time.
 
 The above functions correspond respectively to examples 1.5.2-5 of “An Introduction to Measure Theory” by Terrence Tao.
 
