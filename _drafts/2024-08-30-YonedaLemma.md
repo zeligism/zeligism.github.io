@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Can coffee taste like melon, blackberry, or banana?
+title:  Yoneda Lemma
 date:   2024-09-21 00:00:00 +0000
 ---
 
