@@ -110,10 +110,10 @@ I was there for about a year before my PhD, where I was sponsored by the Kawader
 
 ## Hobbies
 I do enjoy my research, but I also have a lot of other interests. I love cooking (especially Italian cuisine) and travelling (especially for food).
-Other hobbies include: reading (everything), writing (nothing), coding (used to be fun), video games (I'd like to have more time for this), learning languages (Japanese and Italian, slowly but surely), photography (I own a dusty Fujifilm X-T10), and opening parentheses (like this one).
+Other hobbies include: reading, writing, coding (used to be fun), video games (I'd like to have more time for this), learning languages (Japanese and Italian, slowly but surely), photography (I own a dusty Fujifilm X-T10), and opening parentheses (like this one).
 Recently, I've been reading some history and politics, which I find quite illuminating (they say history repeats itself for a reason).
 
-There is a beautiful sense of fulfillment when the people you care about become happy because of something you did. This, for example, gives me the motivation to cook more delicious food that draws a bigger smile on everyone. I wish my papers have this kind of impact, too. Let me cook.
+There is a beautiful sense of fulfillment when the people you care about become happy because of something you did. This, for example, gives me the motivation to cook more delicious food that draws a bigger smile on everyone. I wish my papers have this kind of impact, too. I should start cooking my papers.
 
 
 ## Contact Me
