@@ -1,0 +1,64 @@
+{% case include.sequence %}
+  {% when "horizontal" %}
+    {% assign title = "Escaping into horizontal infinity" %}
+    {% assign note = "A unit box marches to the right forever. Every fixed point eventually gets left behind." %}
+    {% assign max_n = 12 %}
+    {% assign initial_n = 1 %}
+    {% assign fallback = "/assets/img/measuretheory/horizontal_infinity.gif" %}
+  {% when "width" %}
+    {% assign title = "Escaping into width infinity" %}
+    {% assign note = "The box keeps area 1 while flattening and spreading out along the line." %}
+    {% assign max_n = 20 %}
+    {% assign initial_n = 1 %}
+    {% assign fallback = "/assets/img/measuretheory/width_infinity.gif" %}
+  {% when "height" %}
+    {% assign title = "Escaping into height infinity" %}
+    {% assign note = "The support collapses toward 0, but the height blows up fast enough to preserve area 1." %}
+    {% assign max_n = 12 %}
+    {% assign initial_n = 1 %}
+    {% assign fallback = "/assets/img/measuretheory/height_infinity.gif" %}
+  {% when "typewriter" %}
+    {% assign title = "Escaping into an infinite cycle" %}
+    {% assign note = "At level k, the interval [0,1] is partitioned into 2^k dyadic cells and the sequence visits them from left to right." %}
+    {% assign max_n = 31 %}
+    {% assign initial_n = 1 %}
+    {% assign fallback = "/assets/img/measuretheory/typewriter_sequence.gif" %}
+{% endcase %}
+
+<div class="measure-sequence" data-sequence="{{ include.sequence }}" data-max-n="{{ max_n }}" data-initial-n="{{ initial_n }}">
+  <div class="measure-sequence__topline">
+    <p class="measure-sequence__eyebrow">{{ title }}</p>
+    <p class="measure-sequence__counter" data-role="n-label">n = {{ initial_n }}</p>
+  </div>
+
+  <div class="measure-sequence__plot" data-role="plot" aria-label="{{ title }}"></div>
+
+  <noscript>
+    <p class="measure-sequence__fallback">
+      <img src="{{ fallback | relative_url }}" alt="{{ title }}">
+    </p>
+  </noscript>
+
+  <div class="measure-sequence__stats">
+    <span class="measure-sequence__chip" data-role="l1"></span>
+    <span class="measure-sequence__chip" data-role="linf"></span>
+    <span class="measure-sequence__chip" data-role="pointwise"></span>
+    <span class="measure-sequence__chip" data-role="measure"></span>
+  </div>
+
+  <div class="measure-sequence__controls">
+    <button type="button" class="measure-sequence__play" data-role="play" aria-pressed="false">Play</button>
+    <label class="measure-sequence__slider-label" for="{{ include.sequence }}-slider">Step</label>
+    <input
+      id="{{ include.sequence }}-slider"
+      class="measure-sequence__slider"
+      type="range"
+      min="1"
+      max="{{ max_n }}"
+      value="{{ initial_n }}"
+      step="1"
+      data-role="slider">
+  </div>
+
+  <p class="measure-sequence__note">{{ note }}</p>
+</div>

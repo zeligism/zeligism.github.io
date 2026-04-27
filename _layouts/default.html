@@ -14,6 +14,11 @@
     </main>
 
     {%- include footer.html -%}
+    {%- if page.custom_js -%}
+      {%- for script in page.custom_js -%}
+    <script src="{{ script | relative_url }}" defer></script>
+      {%- endfor -%}
+    {%- endif -%}
 
   </body>
 

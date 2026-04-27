@@ -1,0 +1,195 @@
+.measure-sequence {
+  --sequence-surface: #f7f4ed;
+  --sequence-border: #d6d0c0;
+  --sequence-text: #2e2a23;
+  --sequence-muted: #6d665a;
+  --sequence-grid: #e7e1d6;
+  --sequence-accent: #9b6b2f;
+  --sequence-fill: rgba(155, 107, 47, 0.18);
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1rem 1.1rem;
+  border: 1px solid var(--sequence-border);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #fbfaf6 0%, var(--sequence-surface) 100%);
+  color: var(--sequence-text);
+  box-shadow: 0 12px 30px rgba(44, 38, 28, 0.04);
+}
+
+.measure-sequence[data-sequence="horizontal"] {
+  --sequence-accent: #8b5e34;
+  --sequence-fill: rgba(139, 94, 52, 0.18);
+}
+
+.measure-sequence[data-sequence="width"] {
+  --sequence-accent: #667a42;
+  --sequence-fill: rgba(102, 122, 66, 0.18);
+}
+
+.measure-sequence[data-sequence="height"] {
+  --sequence-accent: #9f4d3e;
+  --sequence-fill: rgba(159, 77, 62, 0.18);
+}
+
+.measure-sequence[data-sequence="typewriter"] {
+  --sequence-accent: #4c6b8a;
+  --sequence-fill: rgba(76, 107, 138, 0.18);
+}
+
+.measure-sequence__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.measure-sequence__eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sequence-muted);
+}
+
+.measure-sequence__counter {
+  margin: 0;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--sequence-border);
+  color: var(--sequence-text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+}
+
+.measure-sequence__plot {
+  width: 100%;
+  margin-bottom: 0.85rem;
+}
+
+.measure-sequence__plot svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(214, 208, 192, 0.9);
+}
+
+.measure-sequence__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+}
+
+.measure-sequence__chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--sequence-border);
+  color: var(--sequence-text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+}
+
+.measure-sequence__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.measure-sequence__play {
+  padding: 0.42rem 0.8rem;
+  border: 1px solid var(--sequence-text);
+  border-radius: 999px;
+  background: var(--sequence-text);
+  color: #faf8f3;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+
+.measure-sequence__play:hover,
+.measure-sequence__play:focus-visible {
+  background: var(--sequence-accent);
+  border-color: var(--sequence-accent);
+}
+
+.measure-sequence__slider-label {
+  font-size: 0.88rem;
+  color: var(--sequence-muted);
+}
+
+.measure-sequence__slider {
+  flex: 1 1 220px;
+  accent-color: var(--sequence-accent);
+}
+
+.measure-sequence__note {
+  margin: 0;
+  color: var(--sequence-muted);
+  font-size: 0.96rem;
+}
+
+.measure-sequence__fallback {
+  margin: 0 0 0.85rem;
+}
+
+.measure-sequence__fallback img {
+  display: block;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.measure-sequence__axis,
+.measure-sequence__grid {
+  stroke-linecap: round;
+}
+
+.measure-sequence__grid {
+  stroke: var(--sequence-grid);
+  stroke-width: 1;
+}
+
+.measure-sequence__axis {
+  stroke: #938c80;
+  stroke-width: 1.35;
+}
+
+.measure-sequence__tick-label,
+.measure-sequence__axis-label {
+  fill: var(--sequence-muted);
+  font-size: 13px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.measure-sequence__bar {
+  fill: var(--sequence-fill);
+  stroke: var(--sequence-accent);
+  stroke-width: 2.2;
+}
+
+.measure-sequence__bar-top {
+  stroke: var(--sequence-accent);
+  stroke-width: 2.8;
+  stroke-linecap: round;
+}
+
+@media (max-width: 640px) {
+  .measure-sequence {
+    padding: 0.85rem 0.8rem 0.95rem;
+  }
+
+  .measure-sequence__topline,
+  .measure-sequence__controls {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .measure-sequence__slider {
+    width: 100%;
+  }
+}
