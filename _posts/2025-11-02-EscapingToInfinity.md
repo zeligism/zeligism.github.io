@@ -65,20 +65,12 @@ The above functions correspond respectively to examples 1.5.2-5 of “An Introdu
 
 This function is literally a box that travels to the right forever, one step at a time. Quite simple.
 
-$$
-f_n(x) = 1_{[n,n+1]}(x)
-$$
-
 {% include measure_sequence.html sequence="horizontal" %}
 
 
 ## Escaping into width infinity.
 
 This function divides its mass along the x-axis, sort of squashing itself flat. Imagine flattening a dough with your hand. It’s the same mass of dough, but it becomes thinner and wider as you flatten it.
-
-$$
-f_n(x) = \frac1n\,1_{[0,n]}(x)
-$$
 
 {% include measure_sequence.html sequence="width" %}
 
@@ -88,10 +80,6 @@ AKA *escaping into vertical infinity*.
 
 I thought calling it *height infinity* is more accurate since it is almost a reflected version of the *width infinity* case.
 
-$$
-f_n(x) = n\,1_{[1/n,\,2/n]}(x)
-$$
-
 {% include measure_sequence.html sequence="height" %}
 
 
@@ -99,15 +87,7 @@ $$
 AKA *typewriter sequence*.
 
 This one is tricky to visualize without some code. It’s a function that cycles around the [0,1] interval, halving its width every cycle.
-
-A standard indexing is
-$$
-f_n(x)=1_{[j/2^k,\,(j+1)/2^k]}(x),
-\qquad n=2^k+j,\quad 0\le j<2^k.
-$$
-
-$$f_n(x) = 1_{[\frac{n-2^k}{2^k}, \frac{n-2^k+1}{2^k}]}(x),$$
-where $k = \text{floor}(\log_2 n)$, i.e., the unique $k$ such that $2^k \le n \le 2^{k+1}$.
+The widget uses the standard indexing $$n=2^k+j$$ with $$0\le j<2^k$$.
 
 It’s the kind of degeneracy that measure theorists love and find interesting. Indeed, among the notions discussed here, it doesn’t converge except in measure and in $L^p$ norm for finite $p$.
 
@@ -133,3 +113,5 @@ But some researchers solely embrace measure theory as a scarecrow against those 
 Some of them *love* to say “sigma algebra” whenever they can, and in the most unnecessary places.
 It's like they're flexing their muscles during an interview.
 What I need from measure theory as a machine learning researcher is simple stuff like the notion of "almost everywhere", swapping differentials and integrals, etc. So please keep your sigma boy stuff out of deep learning. Nobody knows what's going on anyway, so let's keep it simple and take it easy.
+
+*[Disclaimer: I used Codex to create the interactive widgets and double-check the math.]*

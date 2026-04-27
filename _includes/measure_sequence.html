@@ -1,24 +1,28 @@
 {% case include.sequence %}
   {% when "horizontal" %}
     {% assign title = "Escaping into horizontal infinity" %}
+    {% capture formula %}$$f_n(x)=1_{[n,n+1]}(x)$${% endcapture %}
     {% assign note = "A unit box marches to the right forever. Every fixed point eventually gets left behind." %}
     {% assign max_n = 12 %}
     {% assign initial_n = 1 %}
     {% assign fallback = "/assets/img/measuretheory/horizontal_infinity.gif" %}
   {% when "width" %}
     {% assign title = "Escaping into width infinity" %}
+    {% capture formula %}$$f_n(x)=\frac{1}{n}\,1_{[0,n]}(x)$${% endcapture %}
     {% assign note = "The box keeps area 1 while flattening and spreading out along the line." %}
     {% assign max_n = 20 %}
     {% assign initial_n = 1 %}
     {% assign fallback = "/assets/img/measuretheory/width_infinity.gif" %}
   {% when "height" %}
     {% assign title = "Escaping into height infinity" %}
+    {% capture formula %}$$f_n(x)=n\,1_{[1/n,\,2/n]}(x)$${% endcapture %}
     {% assign note = "The support collapses toward 0, but the height blows up fast enough to preserve area 1." %}
     {% assign max_n = 12 %}
     {% assign initial_n = 1 %}
     {% assign fallback = "/assets/img/measuretheory/height_infinity.gif" %}
   {% when "typewriter" %}
     {% assign title = "Escaping into an infinite cycle" %}
+    {% capture formula %}$$f_n(x)=1_{[j/2^k,\,(j+1)/2^k]}(x),\qquad n=2^k+j,\ 0\le j<2^k$${% endcapture %}
     {% assign note = "At level k, the interval [0,1] is partitioned into 2^k dyadic cells and the sequence visits them from left to right." %}
     {% assign max_n = 31 %}
     {% assign initial_n = 1 %}
@@ -29,6 +33,10 @@
   <div class="measure-sequence__topline">
     <p class="measure-sequence__eyebrow">{{ title }}</p>
     <p class="measure-sequence__counter" data-role="n-label">n = {{ initial_n }}</p>
+  </div>
+
+  <div class="measure-sequence__formula">
+    {{ formula }}
   </div>
 
   <div class="measure-sequence__plot" data-role="plot" aria-label="{{ title }}"></div>
