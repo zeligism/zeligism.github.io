@@ -13,14 +13,15 @@ Escaping *from* infinity is different from escaping *to* infinity.
 When we say infinity, we are referring to some quantity that becomes unbounded as we *go further*.
 But when a thing escapes *to* infinity, its total mass can stay *finite* while still somehow managing to evade convergence, often due to degeneracies in the way we measure its mass.
 
-Consider this weird argument that I just came up with because why not.
+Consider this weird argument that I just came up with.
 Let's say we're measuring speed.
-So, you're running in a competition, running forever.
-You send me a message while running and ask me: "what is my speed?"
-And I tell you: "$$c$$."
-Ok, I know this doesn't make sense for physicists, but hear me out.
-I was just counting every particle that you consist of to be **you**, including your photons, which I can trace and measure.
-Since photons are massless, we can avoid this degenerate measurement by considering only non-massless stuff that you consist of.
+So, you're running in a competition really fast.
+You send me a message and ask me: "what is my speed?"
+And I answer: "$$c$$."
+Ok, I know this doesn't make sense, but hear me out.
+I secretly decided that every particle that counts as **you** includes the photons bouncing off you, which I can trace and measure.
+So "you" were already moving at the speed of light.
+If we instead measure only the massive stuff that makes you up, the pathology disappears.
 That is *almost* you. Get it?
 
 ---
