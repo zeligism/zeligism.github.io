@@ -11,8 +11,7 @@ custom_js:
 
 Escaping *from* infinity is different from escaping *to* infinity.
 When we say infinity, we are referring to some quantity that becomes unbounded as we *go further*.
-But when a thing escapes *to* infinity, its total mass can stay *finite* but somehow eventually become infinite,
-often due to degeneracies in the way we measure its mass.
+But when a thing escapes *to* infinity, its total mass can stay *finite* while still somehow managing to evade convergence, often due to degeneracies in the way we measure its mass.
 
 Consider this weird argument that I just came up with because why not.
 Let's say we're measuring speed.
@@ -54,9 +53,9 @@ So the function still has enough room to be naughty, but less and less room to d
 
 ---
 
-A *human* can be finite, yet his *soul* vanishes—journeying beyond the infinite horizon, diffusing infinitely, reaching the infinite heights, or wandering back and forth infinitely—and dies slowly but surely.
+A *human* can be finite, yet the *soul* vanishes—journeying beyond the infinite horizon, diffusing infinitely, reaching the infinite heights, or wandering back and forth infinitely—and dies slowly but surely.
 
-This isn’t Zen poetry. These are convergence phenomena of some exotic functions, where "human" and "soul" stand for $$m$$ and $$f$$. It’s a peculiarity of measure theory that makes it simultaneously intriguing yet boring at the same time.
+This isn’t Zen poetry. These are convergence phenomena of some exotic functions, where "human" and "soul" stand for the total mass $$\int f\,dm$$ and the function $$f$$. It’s a peculiarity of measure theory that makes it simultaneously intriguing yet boring at the same time.
 
 The above functions correspond respectively to examples 1.5.2-5 of “An Introduction to Measure Theory” by Terence Tao.
 
@@ -65,9 +64,9 @@ The above functions correspond respectively to examples 1.5.2-5 of “An Introdu
 
 This function is literally a box that travels to the right forever, one step at a time. Quite simple.
 
-<!-- $$
+$$
 f_n(x) = 1_{[n,n+1]}(x)
-$$ -->
+$$
 
 {% include measure_sequence.html sequence="horizontal" %}
 
@@ -76,9 +75,9 @@ $$ -->
 
 This function divides its mass along the x-axis, sort of squashing itself flat. Imagine flattening a dough with your hand. It’s the same mass of dough, but it becomes thinner and wider as you flatten it.
 
-<!-- $$
+$$
 f_n(x) = \frac1n\,1_{[0,n]}(x)
-$$ -->
+$$
 
 {% include measure_sequence.html sequence="width" %}
 
@@ -88,9 +87,9 @@ AKA *escaping into vertical infinity*.
 
 I thought calling it *height infinity* is more accurate since it is almost a reflected version of the *width infinity* case.
 
-<!-- $$
+$$
 f_n(x) = n\,1_{[1/n,\,2/n]}(x)
-$$ -->
+$$
 
 {% include measure_sequence.html sequence="height" %}
 
@@ -100,14 +99,14 @@ AKA *typewriter sequence*.
 
 This one is tricky to visualize without some code. It’s a function that cycles around the [0,1] interval, halving its width every cycle.
 
-<!-- A standard indexing is
+A standard indexing is
 $$
 f_n(x)=1_{[j/2^k,\,(j+1)/2^k]}(x),
 \qquad n=2^k+j,\quad 0\le j<2^k.
 $$
 
 $$f_n(x) = 1_{[\frac{n-2^k}{2^k}, \frac{n-2^k+1}{2^k}]}(x),$$
-where $k = \text{floor}(\log_2 n)$, i.e., the unique $k$ such that $2^k \le n \le 2^{k+1}$. -->
+where $k = \text{floor}(\log_2 n)$, i.e., the unique $k$ such that $2^k \le n \le 2^{k+1}$.
 
 It’s the kind of degeneracy that measure theorists love and find interesting. Indeed, among the notions discussed here, it doesn’t converge except in measure and in $L^p$ norm for finite $p$.
 
@@ -126,7 +125,7 @@ The above functions and their convergences can be summarized in the tables below
 
 The most important lesson I learned after I skimmed Tao’s book is that edge cases are the force that pushes us into narrower and more sophisticated mathematics.
 For example, simple, high-level notions of convergence break down or become ambiguous when mass is allowed to drift, diffuse, concentrate, or cycle.
-This is why we have different types of integrals.
+This is why we need different kinds of convergence, and why swapping limits with integrals is not straightforward.
 We need to specialize and generalize our definitions to rigorously cover all of those edge cases.
 
 But some researchers solely embrace measure theory as a scarecrow against those who get easily intimidated by rigor.
