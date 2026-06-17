@@ -61,4 +61,4 @@ The answer to that question will unfold sooner than we realize.
 By the way, have you ever wondered where our personalities come from?
 Genes, environment, or a chaotic accumulation of differences stemming from a perturbation of both?
 Well, does it even matter to us where they come from?
-Because, for all we know, if a tiny tweak to a copy of an LLM plus a tiny tweak to its training algorithm can suffice to give it its own personality, then maybe that's exactly what we are: tiny tweaks in a serene universe of predeterminate homogeneity.
+Because, for all we know, if a tiny tweak to a copy of an LLM plus a tiny tweak to its training algorithm can suffice to give it its own personality, then maybe that's exactly what we are: tiny tweaks in a universe of predeterminate homogeneity.
