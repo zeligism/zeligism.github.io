@@ -7,7 +7,7 @@ academic: false
 
 A fundamental aspect of human civilizations is culture, which I would describe as the preservation of complex thoughts and societal behavior in abstract or physical artifacts that can be passed on to future civilizations, e.g., literature, pottery, and music.
 
-To understand the creation of culture, we could try to understand the very thing that generates it: the human brain. But the brain is so complex that "understanding" it is ill-posed.
+To understand the creation of culture, we could try to understand the very thing that generates it—the human brain. But the brain is so complex that "understanding" it is ill-posed.
 In fact, we have already created something that can speak and be understood like a human being, namely a large language model (LLM), and, yes, we don't fully understand how it works.
 Some people are even dramatically questioning whether these models are sentient.
 Perhaps understanding sentience is as ill-posed as understanding the brain.
@@ -18,7 +18,7 @@ Wouldn't it be interesting if we could query anything and get its response back?
 For example, we could ask a stone how long it's been there, what it saw, or what its properties are.
 We tend to anthropomorphize things and give them attributes and functions that allow them to interact with the world
 (that is what object-oriented programming does too, in some sense).
-But there is something deeper about speaking: it's free and open-ended.
+But there is something deeper about speaking. It's free and open-ended.
 
 Through this lens, we can look at culture as an abstract object that describes a group of people—a society.
 When we query a society, we query its members directly and receive a variety of responses that we do not have the capacity to process individually.
