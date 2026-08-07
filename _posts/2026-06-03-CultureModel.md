@@ -62,3 +62,7 @@ By the way, have you ever wondered where our personalities come from?
 Genes, environment, or a chaotic accumulation of differences stemming from a perturbation of both?
 Well, does it even matter to us where they come from?
 Because, for all we know, if a tiny tweak to a copy of an LLM plus a tiny tweak to its training algorithm can suffice to give it its own personality, then maybe that's exactly what we are: tiny tweaks in a universe of predeterminate homogeneity.
+
+---
+
+*[This post was largely inspired by ["Large AI models are cultural and social technologies" by Henry Farrell, Alison Gopnik, Cosma Shalizi, and James Evans](https://www.science.org/doi/10.1126/science.adt9819).]*
