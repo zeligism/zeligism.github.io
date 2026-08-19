@@ -9,8 +9,10 @@ In the last "X meets Y" battle, we've seen how a *strong growth* property of a f
 
 ## FY
 
-The [Fenchel-Young inequality](https://en.wikipedia.org/wiki/Convex_conjugate#Fenchel's_inequality) (FY inequality) is one of the most beautiful and powerful inequalities in convex analysis.
-First of all, a differentiable (because I'm lazy) convex function is a function $$f : \mathbb{R}^d \to \mathbb{R}$$ such that for any vectors $$x, y \in \mathbb{R}^d$$, we have
+The [Fenchel-Young inequality](https://en.wikipedia.org/wiki/Convex_conjugate#Fenchel's_inequality) is one of the most beautiful and powerful inequalities in convex analysis.
+
+Let's quickly define the basics.
+A differentiable (because I'm lazy) convex function is a function $$f : \mathbb{R}^d \to \mathbb{R}$$ such that for any vectors $$x, y \in \mathbb{R}^d$$, we have
 
 $$
 \begin{equation}
@@ -23,8 +25,8 @@ Put it simply, if you plot the function, then it should always be above its tang
 
 But I'm afraid I have to... well, just a little bit.
 
-**Fenchel-Young inequality.**
-The FY inequality simply says that, for any convex $$f$$ and its convex **conjugate** $$f^\ast$$, we have
+**Fenchel-Young (FY) inequality.**
+The FY inequality simply says that, for any convex $$f$$ and its **convex conjugate** $$f^\ast$$, we have
 
 $$
 \begin{equation}
@@ -52,8 +54,7 @@ If you were thinking: "$$g$$ is often reserved for gradients, so this is confusi
 
 These inequalities look opaque at first glance, but they do offer intuitive interpretations.
 The first intuition is *mathematical*, which is the right intuition in my opinion, and from which the inspiration for convex conjugacy is clearest.
-The second is *geometric*, which comes straight from the definition.
-The third is *algorithmic* (or game-theoretic), which comes by viewing the convex conjugate as a game.
+The second is *geometric*, which comes straight from visualizing the definition.
 
 **Mathematical intuition.**
 Start by looking at (FY).
@@ -61,61 +62,84 @@ Next, look at (CVX) and notice how the part that depends on $$x$$ can be matched
 Now try to subsume the $$y$$ part of (CVX) under the $$f^\ast(g)$$ part of (FY) assuming fixed $$g$$, i.e., $$g$$ doesn't depend on $$y$$.
 
 $$
-    f(x) + \underbrace{\langle y, g \rangle - f(y)}_{f^\ast(g)?} \geq \langle x, g \rangle.
+    f(x) + \underbrace{\langle y, g \rangle - f(y)}_{\text{tighest at }f^\ast(g)} \geq \langle x, g \rangle.
 $$
 
-Define the quantity $$h(y;g) := \langle y, g \rangle - f(y)$$.
+Define the quantity $$h(y;g) := \langle y, g \rangle - f(y)$$, where $$g$$ here should be thought of as an arbitrary gradient.
 By the definition of the convex conjugate, we have $$f^\ast(g) = \sup_y h(y;g)$$.
 This means that the convex conjugate is the tightest "slack" you can get out of $$f$$ at a specific "slope",
 where slack at $$g$$ is quite literally the quantity $$h(y;g)$$.
-This is the best slack allowed from using (CVX).
+This is the best slack allowed from using (CVX), and you can think of (FY) as "defining" convexity and convex conjugacy in one inequality.
+
 Not all convex functions satisfy (CVX) as nicely as you would like.
 You can always construct instances of convex $$f$$ where convexity is just barely satisfied (like a constant function that is infinity at the boundaries), but it's more instructive to first study the nice ones to understand how convexity behaves.
-
 The nice convex functions are called *strongly convex*, which is ideal because you know that there is some nice degree of strict convexity everywhere (the parabola is the canonical example).
 Now, given a specific gradient $$g$$, you can think of the convex conjugate (in the ideal case discussed here) as a quanitity that is maximized at the point on which $$g$$ was evaluated.
 For example, if we know that $$g=\nabla f(y)$$, then $$f^\ast(g) = f^\ast(\nabla f(y)) = y$$, so the convex conjugate is just the inverse map of the gradient, i.e., $$f^\ast = (\nabla f)^{-1}$$.
 Strongly convex functions demonstrate the operational meaning of $$f^\ast$$ most clearly,
 and you can imagine that this meaning starts to deteriorate as you move further away from convexity.
 
-
-[TODO]
-
 **Geometric intuition.**
+The geometric intuition comes from [this StackOverflow page](https://math.stackexchange.com/questions/1874482/geometric-intuition-of-conjugate-function).
+It provides a way to visualize the equation of the convex conjugate.
+I'll just quote Julek's answer here:
 
-[Geometric intuition of convex conjugate](https://math.stackexchange.com/questions/1874482/geometric-intuition-of-conjugate-function)
+> To me the best interpretation is economic. Interpret  𝑓(𝑥)  as the cost to produce the quantity  𝑥  of some product and interpret  𝑦  as the market price per unit. Now notice that  𝑓∗(𝑦)  represents the optimal profit at given prices  𝑦 . The quantity  𝑥𝑦  represents revenue from sales and  𝑓(𝑥) represents production costs.
+> 
+> Now for the geometrical interpretation. If you sketch the graph of the costs of production  𝑓(𝑥)  and assume it convex, continuous, and differentiable, you will see that the point of optimal production, given prices  𝑦 , is given by  𝑦−𝑓′(𝑥)=0 , and this can be found graphically with a ruler, looking for the tangent in the cost curve with the same slope  𝑦 . If you place the ruler in that tangent point, it can be seen that the ruler intersection with the vertical axis will give  −(𝑥𝑦−𝑓(𝑥)) .
+> 
+> This is a very useful calculating device. Provided only with the graph of  𝑓(𝑥)  and a ruler, the analyst is able to turn the ruler and find what is the optimal profit for each possible price. This can be plotted into another piece of paper. Then given any price  𝑦  he is able to find what was the optimal profit. Without noticing, he has discovered the conjugate function.
 
-![Hello](/assets/img/fy-meets-dv/convex-conjuagte.png)
-*Figure 1: A black box does a bunch of calculations on the input $$x$$, and then spits the output $$y$$ out. Machine learning is about learning the black box itself given input/output examples $$(x,y)$$. from .*)
+The following figure is also taken from the same page, due to [Dmitri Bertsekas from his lecture notes](https://ocw.mit.edu/courses/6-253-convex-analysis-and-optimization-spring-2012/resources/index.html).
 
-A visual intuition should come naturally after running the above procedure.
-Think of $$f^\ast(g)$$ as a function of gradients rather than positions.
-Again, the convexity inequality directly says that the function $$f(x)$$ is above the tangent line, or linear approximation, at any point $$y$$, which is written $$f(x) \geq f(y) + \langle x - y,\, g \rangle$$, where $$g$$ is the gradient at $$y$$.
-The tangent is just a straight line, but $$f$$ can a bowl or something, so the surface of the bowl is higher than the line, and becomes even higher the further you go.
-The "further you go" part is controlled exactly by $$x$$, so when you treat it as an optimization variable and try to minimize this gap between the bowl and the line, you would intuitively think: "it's just $$y$$, the point that touches the tangent", and you would be exactly correct.
-The minimizer $$x^\ast$$ of $$f(x) - \langle x,\, g \rangle$$ is the maximizer of $$\langle x,\, g \rangle - f(x)$$ because it's literally the upper bound by convexity, and the *value* of this quantity at $$y^\ast$$ is the convex conjugate *by definition*.
-The value itself, $$f^\ast(g)$$, is most visually intuitive when you consider $$g=0$$, the value at flat, zero-slope points, which are the lowest points in a bowl (i.e., the minima of a convex function).
-By Fenchel-Young, $$f^\ast(0)$$ is then the **slack** at optimality, or $$f(x^\ast) \geq -f^\ast(0)$$,
-so it gives us some sort of a certificate of how close $$x$$ is from $$x^\ast$$ by examining $$f(x) + f^\ast(0)$$.
+![Geometric intuition of convex conjugate](/assets/img/fy-meets-dv/convex-conjuagte.png)
 
-
-Now call the $$y$$ part that you consumed in place of $$f^\ast(g)$$ the **slack**.
-Then, the convex conjugate $$f^\ast(g)$$ is just the smallest amount of slack achievable for some gradient/tangent/slope $$g$$ of $$f$$.
-So now you may ask: "what is this *slack* thing and does it have a geometric/visual interpretation"?
-Remember the symmetry in Fenchel-Young: there is this slack thing and the "anti-slack".
+In general, I don't like to interpret the *values* of $f^\ast$ themselves because they're confusing.
+They're literally the largest "difference" between $$f(y)$$ and $$\langle y, g \rangle$$ for each $$g$$ (and the difference is not necessarily positive), and that's what the definition says.
+There is nothing deeply insightful about the geometric intuition in my opinion; its operational meaning strictly comes from its role in (CVX), and hence its role in the duality gap and its interpretation as an optimality certificate in optimization.
 
 
 ## DV
 
-I first saw [Donsker Varadhan Variational Formula](https://en.wikipedia.org/wiki/Kullback–Leibler_divergence#Duality_formula_for_variational_inference) on Wikipedia while looking for at some proofs and properties of KL divergences.
+I first saw [Donsker and Varadhan's Variational Formula](https://en.wikipedia.org/wiki/Kullback–Leibler_divergence#Duality_formula_for_variational_inference) on Wikipedia while looking for at some properties or proofs of KL divergences.
 Same as before, when I looked at the formula, I immediately thought: "that's just a convex conjugate but for distributions".
+Here is the an excerpt from the [Wikipedia article linked above](https://en.wikipedia.org/wiki/Kullback–Leibler_divergence#Duality_formula_for_variational_inference).
+
+**Donsker-Varadhan (DV) Variational Formula.**
+> Let  $$\theta$$ be a set endowed with an appropriate $$\sigma$$-field $$\mathcal{F}$$,
+and two probability measures $$P$$ and $$Q$$, which formulate two probability spaces $$(\theta, \mathcal{F}, P)$$ and $$(\theta,\mathcal{F},Q)$$, with $$Q\ll P$$.
+($$Q\ll P$$ indicates that $$Q$$ is absolutely continuous with respect to $$P$$.)
+Let $$h$$ be a real-valued integrable random variable on $$(\theta,\mathcal{F},P)$$.
+Then the following equality holds
+> $$
+    \log \mathbb{E}_P[\exp h] = \sup_{Q\ll P} { \mathbb{E}_Q[h] − \mathbb{D}_{\mathrm{KL}} (Q \, || \, P) }.
+> $$
+> Further, the supremum on the right-hand side is attained if and only if it holds
+> $$
+    \frac{Q(d \theta)}{P(d \theta)} = \frac{\exp h(\theta )}{\mathbb{R}_{P}[\exp h]},
+> $$
+> almost surely with respect to probability measure P, where $$\frac{Q(d \theta)}{P(d \theta)}$$ denotes the Radon-Nikodym derivative of $$Q$$ with respect to $$P$$.
+
+I think this is even more general than FY.
+What I see is the correspondence
+
+$$
+\begin{align*}
+    \mathbb{E}_Q[h] &\to f(Q) \\
+    \mathbb{D}_{\mathrm{KL}} (Q \, || \, P) &\to \langle \frac{Q(d \theta)}{P(d \theta)},\, Q \rangle \\
+    \log \mathbb{E}_P[\exp h] &\to f^\ast(P)
+\end{align*}
+$$
+
+The only issue is the **flipped sign**.
+
+[TODO]
 
 ---
 
-[Donsker Varadhan Variational Formula](https://en.wikipedia.org/wiki/Kullback–Leibler_divergence#Duality_formula_for_variational_inference)
+Useful references:
+1. [Lectures on the Large Deviation Principle](https://math.berkeley.edu/~rezakhan/LD.pdf).
 
-[Lectures on the Large Deviation Principle](https://math.berkeley.edu/~rezakhan/LD.pdf)
+2. [Reconciling Donsker-Varadhan definition of KL divergence with the "usual" definition](https://math.stackexchange.com/questions/3640450/reconciling-donsker-varadhan-definition-of-kl-divergence-with-the-usual-defini)
 
-[Reconciling Donsker-Varadhan definition of KL divergence with the "usual" definition](https://math.stackexchange.com/questions/3640450/reconciling-donsker-varadhan-definition-of-kl-divergence-with-the-usual-defini)
-
-[What exactly is the relationship between Donsker-Varadhan variational formula and the Laplace principle?](https://mathoverflow.net/questions/432194/what-exactly-is-the-relationship-between-donsker-varadhan-variational-formula-an)
+3. [What exactly is the relationship between Donsker-Varadhan variational formula and the Laplace principle?](https://mathoverflow.net/questions/432194/what-exactly-is-the-relationship-between-donsker-varadhan-variational-formula-an)
