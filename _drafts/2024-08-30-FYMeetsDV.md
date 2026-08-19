@@ -106,7 +106,7 @@ Same as before, when I looked at the formula, I immediately thought: "that's jus
 Here is the an excerpt from the [Wikipedia article linked above](https://en.wikipedia.org/wiki/Kullback–Leibler_divergence#Duality_formula_for_variational_inference).
 
 **Donsker-Varadhan (DV) Variational Formula.**
-> Let  $$\theta$$ be a set endowed with an appropriate $$\sigma$$-field $$\mathcal{F}$$,
+> Let $$\theta$$ be a set endowed with an appropriate $$\sigma$$-field $$\mathcal{F}$$,
 and two probability measures $$P$$ and $$Q$$, which formulate two probability spaces $$(\theta, \mathcal{F}, P)$$ and $$(\theta,\mathcal{F},Q)$$, with $$Q\ll P$$.
 ($$Q\ll P$$ indicates that $$Q$$ is absolutely continuous with respect to $$P$$.)
 Let $$h$$ be a real-valued integrable random variable on $$(\theta,\mathcal{F},P)$$.
