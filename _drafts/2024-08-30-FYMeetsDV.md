@@ -81,7 +81,7 @@ The nice convex functions are called *strongly convex*, which is ideal because y
 Now, given a specific gradient $$g$$, you can think of the convex conjugate (in the ideal case discussed here) as a quantity that is maximized at the point on which $$g$$ was evaluated.
 For example, if we know that $$g=\nabla f(y)$$, then $$\nabla f^\ast(g) = \nabla f^\ast(\nabla f(y)) = y$$, so the gradient of $$f^\ast$$ is just the inverse map of the gradient of $$f$$, i.e., $$\nabla f^\ast = (\nabla f)^{-1}$$.
 Strongly convex functions demonstrate the operational meaning of $$f^\ast$$ most clearly,
-and you can imagine that this meaning starts to deteriorate as you move further away from convexity.§
+and you can imagine that this meaning starts to deteriorate as you move further away from convexity.
 
 **Geometric intuition.**
 The geometric intuition comes from [this Math StackExchange page](https://math.stackexchange.com/questions/1874482/geometric-intuition-of-conjugate-function).
@@ -113,10 +113,10 @@ Here is an excerpt from the [Wikipedia article linked above](https://en.wikipedi
 > Let $$\Theta$$ be a set endowed with an appropriate $$\sigma$$-field $$\mathcal{F}$$,
 and two probability measures $$P$$ and $$Q$$, which formulate two probability spaces $$(\Theta, \mathcal{F}, P)$$ and $$(\Theta,\mathcal{F},Q)$$, with $$Q\ll P$$.
 ($$Q\ll P$$ indicates that $$Q$$ is absolutely continuous with respect to $$P$$.)
-Let $$h$$ be a real-valued integrable random variable on $$(\theta,\mathcal{F},P)$$.
+Let $$h$$ be a real-valued integrable random variable on $$(\Theta,\mathcal{F},P)$$.
 Then the following equality holds
 > $$
-    \log \mathbb{E}_P[\exp h] = \sup_{Q\ll P} { \mathbb{E}_Q[h] − \mathbb{D}_{\mathrm{KL}} (Q \, || \, P) }.
+    \log \mathbb{E}_P[\exp h] = \sup_{Q\ll P} \{ \mathbb{E}_Q[h] − \mathbb{D}_{\mathrm{KL}} (Q \, || \, P) \}.
 > $$
 > Further, the supremum on the right-hand side is attained if and only if it holds
 > $$
@@ -134,8 +134,8 @@ $$
 \end{align*}
 $$
 
-But not quite; there are a few issues.
-First, the conjugate variable is not clear: is it $$P$$ or the Radon-Nikodym derivative $$\frac{Q(d \theta)}{P(d \theta)}$$? The signs are also flipped, and that's a sup, not inf. The trained eye would see signs of duality and try to retrieve the dual form of the DV variational formula, which may come out to be more aligned with FY.
+But there are a few issues.
+First, the conjugate variable is not clear. Is it $$P$$ or the Radon-Nikodym derivative $$\frac{Q(d \theta)}{P(d \theta)}$$? The signs are also flipped, and that's a sup, not inf. The trained eye would see signs of duality and try to retrieve the dual form of the DV variational formula, which may come out to be more aligned with FY.
 
 ### Quick detour, sorry
 
@@ -170,7 +170,8 @@ $$
     = \int \log\frac{dQ}{dP} dQ.
 $$
 
-Written another way, we get the well-known decomposition
+Writing the densities $$P(\theta)$$ and $$Q(\theta)$$ w.r.t. a common measure $$d\theta$$
+we get the well-known decomposition
 
 $$
     \mathbb{D}_{\mathrm{KL}} (Q \, || \, P)
@@ -179,6 +180,16 @@ $$
 $$
 
 The term $$\mathbb{E}_Q [\log P]$$ is also called the cross-entropy loss (assuming $$Q$$ is the dataset and $$P$$ is learned).
+
+The density $$\rho$$ in the previous section was defined w.r.t. $$P$$ itself,
+but setting $$\rho = Q/P$$ gives
+
+$$
+    H_\text{neg}(\rho) = \int \log(\rho)\rho\, dP
+    = H_\text{neg}(Q) - \mathbb{E}_Q[\log P]
+    = \mathbb{D}_{\mathrm{KL}}(Q \, \| \, P),
+$$
+so nothing is lost by switching between the two since $$H_\text{neg}$$ is defined w.r.t. $$P$$.
 
 ### Back to DV
 
@@ -213,27 +224,44 @@ $$
     \\
     f^\ast &\longrightarrow H_\text{neg}^\ast = \log \mathbb{E}_P[\exp (\cdot)]
     \\
-    \langle x, g \rangle &\longrightarrow \mathbb{E}_Q[h + \log P] \quad ?
+    \langle x, g \rangle &\longrightarrow \mathbb{E}_Q[h + \log P]
 \end{align*}
 $$
 
-The measure $$P$$ appears to be dangling around,
-but we can think of it as corresponding to $$\mathbb{R}$$, i.e., $$f: \mathbb{R} \to \mathbb{R}$$.
-Recall that $$Q \ll P$$ indicates that $$Q$$ is absolutely continuous with respect to $$P$$.
-Observe how $$H^\ast_\text{neg}$$ is implictly defined w.r.t. $$P$$.
-We can also define an inner product that implicitly depends on $$P$$ as follows
+The measure $$P$$ appears to be dangling around, but its role becomes clear once we recall that the conjugate space of $$\mathbb{R}^d$$ is itself $$\mathbb{R}^d$$, and it is the inner product $$\langle x, g \rangle$$ that identifies the two.
+The analogous identification here between the function $$h$$ (the conjugate variable) and the ddensity $$Q$$ (playing the role of $$x$$) should be defined w.r.t. $$P$$:
 $$
 \begin{align*}
-    \langle \cdot, Q \rangle_P := \mathbb{E}_Q[\log \langle \exp(\cdot), P \rangle ],
+    \langle h, Q \rangle_P := \mathbb{E}_Q[h + \log P] = \int_\Theta \big( h(\theta) + \log P(\theta) \big)\, Q(\theta) \, d\theta.
 \end{align*}
 $$
-which completes the correspondence between DV and FY.
+This is exactly the term paired with $$Q$$ in (DV), so it completes the correspondence between DV and FY.
 
-### Summary
+### FY = DV
 
-In order to make sense of this correspondence...
+Let's go back to the ambiguity we started with.
+*Is the conjugate variable $$P$$ or the density ratio $$dQ/dP$$?*
+Actually, it's neither, but hear me out.
+
+The pair being matched is $$h$$ (the conjugate variable, standing in for $$g$$) against $$Q$$ itself (standing in for $$x$$), with $$P$$ fixed in the background, anchoring both the reference measure and the inner product $$\langle \cdot, \cdot \rangle_P$$ they're paired through:
+
+$$
+\begin{align*}
+    f &\longrightarrow H_\text{neg}, & x &\longrightarrow Q,
+    \\
+    f^\ast &\longrightarrow L = H_\text{neg}^\ast, & g &\longrightarrow h,
+\end{align*}
+$$
+
+with $$\langle x, g \rangle \to \langle h, Q \rangle_P$$, and the tightest slack $$f(x) \to H_\text{neg}(Q) = \mathbb{D}_{\mathrm{KL}}(Q \, \| \, P)$$ recovering exactly the duality gap from the FY story.
+So the DV variational formula isn't merely *analogous* to a convex conjugate, it *is* one, applied to the negative-entropy/LogSumExp pair, with $$P$$ acting as the fixed reference point everything else is measured against.
+
+Seen this way, the attainment condition quoted at the start, $$dQ/dP = \exp(h)/\mathbb{E}_P[\exp h]$$, is just the usual FY equality condition $$g = \nabla f(x)$$ in disguise: the optimal $$Q$$ is precisely the density obtained by tilting $$P$$ by $$\exp(h)$$ and renormalizing, exactly as $$\nabla f^\ast(g)$$ recovers the optimal $$x$$ in the ordinary convex case.
 
 ---
+
+LLM disclaimers and edits:
+- ...
 
 Useful references:
 1. [Lectures on the Large Deviation Principle](https://math.berkeley.edu/~rezakhan/LD.pdf).
