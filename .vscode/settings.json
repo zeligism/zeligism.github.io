@@ -6,5 +6,7 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
         "hydralance": true
-    }
+    },
+    "mdmath.delimiters": "kramdown",
+    "markdown.math.enabled": true
 }
