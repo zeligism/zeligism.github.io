@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Fenchel-Young Meets Donsker-Varadhan
-date:   2026-08-18 00:00:00 +0000
+date:   2026-08-30 00:00:00 +0000
 academic: true
 ---
 
