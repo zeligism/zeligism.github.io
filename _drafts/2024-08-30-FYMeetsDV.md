@@ -271,7 +271,5 @@ $$
 
 This is the nonnegative "slack" from the FY story, and it vanishes exactly when $$Q=Q_h$$.
 
----
-
-Useful references:
-1. [Lectures on the Large Deviation Principle](https://math.berkeley.edu/~rezakhan/LD.pdf).
+<!-- Useful references:
+1. [Lectures on the Large Deviation Principle](https://math.berkeley.edu/~rezakhan/LD.pdf). -->
