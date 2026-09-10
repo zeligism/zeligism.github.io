@@ -199,7 +199,7 @@ $$
 So our negative entropy $$H$$ (or $$H_P$$) was already *relative* entropy!
 The choice of reference measure $$P$$ matters a lot here; this isn't the same functional as $$H_\mu$$, and the choice of density $$\rho = dQ/dP$$ is also necessary.
 
-To summarize, we have that the negative entropy w.r.t. $$P$$ of the derivative $$dQ/dP$$ is equal to the KL divergence of $$P$$ from $$Q$$,
+To summarize, we have that the negative entropy of the derivative $$dQ/dP$$ w.r.t. $$P$$ is equal to the relative entropy of $$Q$$ w.r.t. $$P$$,
 i.e., $$H_P(dQ/dP) = \mathbb{D}_{\mathrm{KL}}(Q \, \| \, P)$$.
 
 ### Back to DV
@@ -217,7 +217,7 @@ $$
 
 It's quite clear now, isn't it?
 This was just entropy-based conjugacy in disguise!
-And the implicit offset-like object is precisely $$\rho$$, i.e., the Radon-Nikodym derivative $$dQ/dP$$, and the sup over $$\rho$$ is such that $$\rho \geq 0$$ and $$\int \rho dP = 1$$.
+And the implicit object we're optimizing over is precisely $$\rho$$, i.e., the Radon-Nikodym derivative $$dQ/dP$$. The sup over $$\rho$$ is such that $$\rho \geq 0$$ and $$\int \rho dP = 1$$.
 
 Let's take a closer look at the conjugate definition behind FY and the DV identity
 $$
@@ -232,7 +232,7 @@ $$
 so we have the correspondence
 $$
 \begin{align*}
-    f &\longrightarrow H = \mathbb{E}_P[\log (\cdot)]
+    f &\longrightarrow H
     \\
     f^\ast &\longrightarrow H^\ast = \log \mathbb{E}_P[\exp (\cdot)]
     \\
@@ -249,12 +249,20 @@ The function and its conjugate are the negative-entropy and LogSumExp, with $$P$
 Observe again from the above that $$x \in \mathcal{X}$$ corresponds to $$\rho = dQ/dP \geq 0$$ and $$\int \rho dP = \int dQ = 1$$.
 On the other hand, the conjugate variable $$h$$ corresponds to $$g \in \mathcal{X}^\ast$$.
 Recall the condition quoted in the excerpt, $$dQ/dP = \exp(h)/\mathbb{E}_P[\exp h]$$.
-This is the same story as $$\nabla f^\ast(g)$$ recovering the optimal "offset" $$x$$ where, ideally, $$g=\nabla f(x)$$.
-Indeed, differentiating LogSumExp $$\nabla L(h) = \nabla H^\ast(h)$$ gives precisely the softmax of $$h$$, which is the optimal density $$h$$ such that $$h = \nabla_\rho H(\rho) = \nabla_\rho \mathbb{D}_{\mathrm{KL}}(Q \, \| \, P)$$,
-i.e., the optimal measure $$Q_h$$ is obtained by tilting $$P$$ by $$\exp(h)$$ and renormalizing.
+This is the same story as $$\nabla f^\ast(g)$$ recovering the optimal $$x$$ where, ideally, $$g=\nabla f(x)$$.
+
+Indeed, differentiating LogSumExp $$\nabla L(h) = \nabla H^\ast(h)$$ gives precisely the softmax of $$h$$, which is the optimal density $$\rho = \exp(h) / \mathbb{E}_P[\exp (h)]$$,
+the familiar exponentiate-then-normalize idea behind softmax, with P as the reference measure.
+The optimal measure $$Q_h$$ is obtained by tilting $$P$$ by $$\exp(h)$$ and renormalizing.
 That's the equality case.
 
-Finally, the full FY gap has a particularly nice form:
+The inverse-gradient story is still there.
+Differentiating $$L(h)$$ gives the optimal density $$\rho$$, and differentiating $$H(\rho)$$ takes us back to $$h$$ *plus an additive constant*.
+Since $$\nabla H(\rho) = \log(\rho) + 1$$, we have that $$\nabla L(\nabla H(\rho)) = \rho$$ but $$\nabla H(\nabla L(h)) = h - L(h) + 1$$.
+The constant $$1 - L(h)$$ is fine; adding it to h changes nothing after applying softmax because softmax is shift-invariant.
+Equivalently, we can write $$\rho = \exp (\bar{h})$$ and $$\bar{h} = \log \rho$$, where $$\bar{h} := h - L(h)$$.
+
+Finally, writing the full FY gap in the DV case gives a particularly nice form:
 
 $$
     \mathbb{D}_{\mathrm{KL}}(Q\|P) + L(h) - \mathbb{E}_Q[h]
@@ -264,9 +272,6 @@ $$
 This is the nonnegative "slack" from the FY story, and it vanishes exactly when $$Q=Q_h$$.
 
 ---
-
-LLM disclaimers and edits:
-- ...
 
 Useful references:
 1. [Lectures on the Large Deviation Principle](https://math.berkeley.edu/~rezakhan/LD.pdf).
