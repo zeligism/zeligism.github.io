@@ -219,6 +219,7 @@ This was just entropy-based conjugacy in disguise!
 And the implicit object we're optimizing over is precisely $$\rho$$, i.e., the Radon-Nikodym derivative $$dQ/dP$$. The sup over $$\rho$$ is such that $$\rho \geq 0$$ and $$\int \rho dP = 1$$.
 
 Let's take a closer look at the conjugate definition behind FY and the DV identity
+
 $$
 \begin{align}
     f^\ast(g) &:= \sup_x \, \{ \langle g, x \rangle - f(x) \},
@@ -228,7 +229,9 @@ $$
     \tag{DV}
 \end{align}
 $$
+
 so we have the correspondence
+
 $$
 \begin{align*}
     f &\longrightarrow H
@@ -238,6 +241,7 @@ $$
     \langle g, x \rangle &\longrightarrow \langle h,\rho\rangle_P = \mathbb{E}_Q[h]
 \end{align*}
 $$
+
 which elegantly completes the correspondence between DV and FY.
 
 ### FY = DV
