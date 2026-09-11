@@ -70,7 +70,6 @@ By (CVX), $$h(z;g) \leq h(y;g)$$ for every $$z$$, so $$f^\ast(g) = \sup_z h(z;g)
 This means that the convex conjugate is the smallest "offset" that makes (FY) hold for every $$x$$ at a specific "slope".
 This offset need not be positive as the nonnegative "slack", or FY gap, is $$f(x) + f^\ast(g) - \langle x,g\rangle$$.
 For differentiable convex $$f$$, equality is available at every $$x$$, attained exactly at $$g = \nabla f(x)$$.
-That is the connection.
 
 Not all convex functions satisfy (CVX) as nicely as you would like.
 You can always construct instances of convex $$f$$ where convexity is just barely satisfied (like a constant function), but it's more instructive to first study the nice ones to understand how convexity behaves.
