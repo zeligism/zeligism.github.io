@@ -95,7 +95,7 @@ The following figure is also taken from the same page, due to [Dimitri Bertsekas
 
 In general, I don't like to interpret the *values* of $f^\ast$ themselves because they're confusing.
 They're literally the largest "difference" between $$f(y)$$ and $$\langle y, g \rangle$$ for each $$g$$ (and the difference is not necessarily positive), and that's what the definition says.
-For optimization, I find the role of $$f^\ast$$ in (CVX), and hence in the duality gap and optimality certificates, more useful than the geometric interpretation alone.
+In optimization, the role of $$f^\ast$$ in (CVX), and hence in the duality gap and optimality certificates, is more useful than what the geometric interpretation alone offers in terms of intuition.
 
 
 ## DV
@@ -245,20 +245,17 @@ which elegantly completes the correspondence between DV and FY.
 The DV variational formula isn't just *analogous* to a convex conjugate, it is, in fact, one.
 The function and its conjugate are the negative-entropy and LogSumExp, with $$P$$ being the fixed reference everything is measured against.
 
-Observe again from the above that $$x \in \mathcal{X}$$ corresponds to $$\rho = dQ/dP \geq 0$$ and $$\int \rho dP = \int dQ = 1$$.
+Observe again from the above that $$x \in \mathcal{X}$$ corresponds to $$\rho \geq 0, \int \rho dP = 1$$ (equivalently, $$dQ/dP \geq 0, \int dQ = 1$$).
 On the other hand, the conjugate variable $$h$$ corresponds to $$g \in \mathcal{X}^\ast$$.
-Recall the condition quoted in the excerpt, $$dQ/dP = \exp(h)/\mathbb{E}_P[\exp h]$$.
-This is the same story as $$\nabla f^\ast(g)$$ recovering the optimal $$x$$ where, ideally, $$g=\nabla f(x)$$.
+Recalling the equality condition quoted in the excerpt $$dQ/dP = \exp(h)/\mathbb{E}_P[\exp h]$$,
+we observe the same story as $$\nabla f^\ast(g)$$ recovering the optimal $$x$$ where, ideally, $$g=\nabla f(x)$$.
 
-Indeed, differentiating LogSumExp $$\nabla L(h) = \nabla H^\ast(h)$$ gives precisely the softmax of $$h$$, which is the optimal density $$\rho = \exp(h) / \mathbb{E}_P[\exp (h)]$$,
-the familiar exponentiate-then-normalize idea behind softmax, with P as the reference measure.
+Indeed, differentiating LogSumExp at $$h$$ gives precisely the softmax of $$h$$, which is the optimal density $$\rho = \exp(h) / \mathbb{E}_P[\exp (h)]$$, with P as the reference measure.
 The optimal measure $$Q_h$$ is obtained by tilting $$P$$ by $$\exp(h)$$ and renormalizing.
-That's the equality case.
 
-The inverse-gradient story is still there.
-Differentiating $$L(h)$$ gives the optimal density $$\rho$$, and differentiating $$H(\rho)$$ takes us back to $$h$$ *plus an additive constant*.
+So the conjugate-gradient-as-inverse-gradient story is still there because differentiating $$L(h)$$ gives the optimal density $$\rho$$, and differentiating $$H(\rho)$$ takes us back to $$h$$ *plus an additive constant*.
 Since $$\nabla H(\rho) = \log(\rho) + 1$$, we have that $$\nabla L(\nabla H(\rho)) = \rho$$ but $$\nabla H(\nabla L(h)) = h - L(h) + 1$$.
-The constant $$1 - L(h)$$ is fine; adding it to h changes nothing after applying softmax because softmax is shift-invariant.
+The constant is fine; adding it to h changes nothing after applying softmax because softmax is shift-invariant.
 Equivalently, we can write $$\rho = \exp (\bar{h})$$ and $$\bar{h} = \log \rho$$, where $$\bar{h} := h - L(h)$$.
 
 Finally, writing the full FY gap in the DV case gives a particularly nice form:
